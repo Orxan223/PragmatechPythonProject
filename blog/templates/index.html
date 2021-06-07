@@ -21,8 +21,10 @@
 
 
 <div style="margin-top:120px" class="container">
+
     <h3>Blog</h3>
     <hr>
+    
     <form action="addTodo" method="POST">
         {% csrf_token %}
         <div class="form-group">
@@ -32,9 +34,7 @@
         <button type="submit" class="btn btn-success">Submit</button>
     </form>
     <hr>
-    {% if value %}
 
-    {% endif %}
     <table class="table">
         <thead>
             <tr>
@@ -42,6 +42,7 @@
                 <th scope="col">Blog Basliq</th>
                 <th scope="col">Update</th>
                 <th scope="col">Delete</th>
+               
             </tr>
         </thead>
         <tbody>
@@ -52,6 +53,7 @@
                 <td>{{todo.title}}</td>
                 <td><a href="/update/{{todo.id}} " class="btn btn-warning">Guncelle</a></td>
                 <td><a href="/delete/{{todo.id}} " class="btn btn-danger">Sil</a></td>
+            
 
             </tr>
             {% endfor %}

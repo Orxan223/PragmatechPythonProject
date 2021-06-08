@@ -71,3 +71,20 @@ print(a)
 # 13)
 c = random.randrange(1,8)
 print (math.sqrt(c))
+
+# 14)
+a = random.randrange(0, 1)
+b = random.randrange(1, 10)
+print(f"{a} * {b}")
+
+
+# 15)
+z = "5.89"
+v = z.strip(".89")
+print(v)
+print(f"{v**3}")  ?
+
+# 16)
+g = '4.92',
+y = int(4.92)
+print(type(y))

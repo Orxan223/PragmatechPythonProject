@@ -69,10 +69,10 @@ elif (x < 10 and x%2 == 0 ):
 else:
     print("BAD")
 
-# x)
+# 12)
 print((3.65 % 22) * (3.65 / 22)) 
 
-# 12)
+# 13)
 a=3
 b=0
 if (a-b) > (a*b):
@@ -87,29 +87,29 @@ else:
 
 
 
-# 11)
+# 14)
 a = round(5.567, 2)
 print(a)
 
-# 12)
+# 15)
 
 
-# 13)
+# 16)
 c = random.randrange(1,8)
 print (math.sqrt(c))
 
-# 14)
+# 17)
 a = random.randrange(0, 1)
 b = random.randrange(1, 10)
 print(f"{a} * {b}")
 
 
-# 15)
-# z = "5.89"
-# v = z.strip(".89")
-# print(f"{v**3}")  -
+# 18)
+z = "5.89"
+v = z.strip(".89")
+print(f"{v**3}")  
 
-# 16)
+# 19)
 g = '4.92',
 y = int(4.92)
 print(type(y))

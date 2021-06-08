@@ -56,9 +56,35 @@ a ='Nineteet Eighty-Four does not present "art-as-culture" but "art-as-function"
 word = 'does '
 
 if word in a:
-    print("True")
+    print(f"{word } metnde var")
 else:
-    print("False")
+    print('Not found')
+
+# 11)
+x = 8
+if x > 10 and x%2 == 0 :
+    print("OKAY")
+elif (x < 10 and x%2 == 0 ):
+    print("NOT OKAY")
+else:
+    print("BAD")
+
+# x)
+print((3.65 % 22) * (3.65 / 22)) 
+
+# 12)
+a=3
+b=0
+if (a-b) > (a*b):
+    print("Greater")
+elif (a-b) == (a*b):
+    print("EQUAL")
+else:
+    (a-b) < (a*b)
+    print("SMALLER")
+
+
+
 
 
 # 11)
@@ -79,10 +105,9 @@ print(f"{a} * {b}")
 
 
 # 15)
-z = "5.89"
-v = z.strip(".89")
-print(v)
-print(f"{v**3}")  ?
+# z = "5.89"
+# v = z.strip(".89")
+# print(f"{v**3}")  -
 
 # 16)
 g = '4.92',

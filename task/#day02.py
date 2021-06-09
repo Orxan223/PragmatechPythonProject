@@ -9,6 +9,8 @@
 # else:
 #     print(sum(a))
 
+
+
 # 2)
 l = list(input("eded daxil ele :"))
 l = list(input("eded daxil ele :"))

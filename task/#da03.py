@@ -3,7 +3,6 @@
 #  Meselen 11 , 20 line fikir versez 1 line artiqdir. 
 # Silindiyi zaman error verir. Sebebi nedir bunun?
 
-
 # 1)
 def sum(numbers):
     total = 0

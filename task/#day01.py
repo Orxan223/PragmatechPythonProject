@@ -37,9 +37,13 @@ print(" “Forever for now” \bis one of the")
 
 # 7)
 a = ( "O, ümumi PFA və FWA mükafatını alan ilk futbolçu oldu. 2008,2013,2014,2016-cü illərdə Qızıl top mükafatını qazandı")
-print(len(a))
+print(len(a)) 
+
 a = "O, ümumi PFA və FWA mükafatını alan ilk futbolçu oldu. 2008,2013,2014,2016-cü illərdə Qızıl top mükafatını qazandı"
 print(a[:57])
+a = "O, ümumi PFA və FWA mükafatını alan ilk futbolçu oldu. 2008,2013,2014,2016-cü illərdə Qızıl top mükafatını qazandı"
+print(a[:len(a)//2])
+
 
 # 8)
 a = 3
@@ -88,7 +92,7 @@ else:
 
 
 # 14)
-a = round(5.567, 2)
+a = round(5.567, 1)
 print(a)
 
 # 15)

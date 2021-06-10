@@ -1,28 +1,33 @@
 # 1)
-# a = list(int( input("Eded daxil edin :")))
-# a = list(int( input("Eded daxil edin :")))
-# a = list(int( input("Eded daxil edin :")))
-# a = list(int( input("Eded daxil edin :")))
+# Bu niye error anlaya bilmedim ,her seyh qaydasinda gorsenir 
 
-# if a[0] == a[1] == a[2] == a[3]:
-#     print(a[0] ** 2)
-# else:
-#     print(sum(a))
+a = list(int( input("Eded daxil edin :")))
+a = list(int( input("Eded daxil edin :")))
+a = list(int( input("Eded daxil edin :")))
+a = list(int( input("Eded daxil edin :")))
+
+if a[0] == a[1] == a[2] == a[3]:
+    print(a[0] ** 2) 
+else:
+    print(sum(a))
 
 
 
 # 2)
-l = list(input("eded daxil ele :"))
-l = list(input("eded daxil ele :"))
-l = list(input("eded daxil ele :"))
-l = list(input("eded daxil ele :"))
+num = int(input("Ne qeder eded daxil edilsin :"))
+list = []
+
+for x in range(num):
+    eded = int(input("Eded daxil edin: "))
+    list.append(eded)
+
+print("Boyuk eded:" , max(list))
+print("Kicik eded: ", min(list))
 
 
-a = l[0]
-for x in l:
-    x > a
-    a = x
-print("en boyuk eded : ", x)
+
+
+
 
 # 3)
 meyveler = {'alma' , 'armud' , 'banan'}

@@ -1,6 +1,8 @@
 # ----------------------------SUAL----------------------------------------------------------------------------
 
-# 1)
+# 1)Write a Python function to sum all the numbers in a list.
+
+
 array = [8, 2, 3, 0, 7]
 def a(x):
     Sum = 0
@@ -11,18 +13,21 @@ a(array)
 
 
 
-# 2)
-def multiply (numbers):
+# 2)Write a Python function to multiply all the numbers in a list. 
+
+array = [8, 2, 3, -1, 7]
+def a(x):
     total = 1
-    for x in numbers:
-        total *= x
-    return(total)
+    for i in x:
+        total *= i
+    print(total)
 
-print(multiply((8, 2, 3, -1, 7)))
+print(a(array))
 
 
 
-# 3)
+# 3)Write a function called returnDay. This function takes in one parameter ( a number from 1-7) and returns the day of the week ( 1 is Sunday, 2 is Monday etc.).
+#  If the number is less than 1 or greater than 7, the function should return None.
 returnDay = {
 1: 'Monday',
 2: 'Tuesday',

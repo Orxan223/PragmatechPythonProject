@@ -1,16 +1,15 @@
 # ----------------------------SUAL----------------------------------------------------------------------------
-# Printde axirda 2 moterize verende error verir amma 3 edende duzelir.
-#  Meselen 11 , 20 line fikir versez 1 line artiqdir. 
-# Silindiyi zaman error verir. Sebebi nedir bunun?
 
 # 1)
-def sum(numbers):
-    total = 0
-    for x in numbers:
-        total += x
-    return(total)
+array = [8, 2, 3, 0, 7]
+def a(x):
+    Sum = 0
+    for i in x:
+        Sum += i
+    print(Sum)
+a(array)
 
-print(sum((8, 2, 3, 0, 7)))
+
 
 # 2)
 def multiply (numbers):

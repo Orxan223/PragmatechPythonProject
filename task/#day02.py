@@ -1,15 +1,14 @@
 # 1)
-# Bu niye error anlaya bilmedim ,her seyh qaydasinda gorsenir 
 
-a = list(int( input("Eded daxil edin :")))
-a = list(int( input("Eded daxil edin :")))
-a = list(int( input("Eded daxil edin :")))
-a = list(int( input("Eded daxil edin :")))
+a = int( input("Eded daxil edin :"))
+b = int( input("Eded daxil edin :"))
+c = int( input("Eded daxil edin :"))
+d = int( input("Eded daxil edin :"))
 
-if a[0] == a[1] == a[2] == a[3]:
-    print(a[0] ** 2) 
+if a == b == c == d:
+    print(a ** 2) 
 else:
-    print(sum(a))
+    print((a+b+c+d))
 
 
 

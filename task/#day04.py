@@ -31,4 +31,5 @@ class C:
         print(self.c, self.d) 
 
 e = C(30)
-e.g = 40                        # another instance variable
+e.d = 40
+e.show()                        # another instance variable

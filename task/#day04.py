@@ -1,8 +1,8 @@
 # --------------------------------------------------Class-----------------------------------------------------
 
-# Bir masin fikirlesek . Bu masinin rengi , motor gucu,qapi sayisi ve s. kimi ozelikleri(deyisken) var. Birde motoru isletmek ,
-# qapilari kilitlemek kimi davranislari(method) var. Bunlar ele masinin butun ozeliklerini ve methodlarini eks
-etdiren class-in olusdurulmasidir.
+#  Bir masin fikirlesek . Bu masinin rengi , motor gucu,qapi sayisi ve s. kimi ozelikleri(deyisken) var. Birde motoru isletmek ,
+#  qapilari kilitlemek kimi davranislari(method) var. Bunlar ele masinin butun ozeliklerini ve methodlarini eks
+# etdiren class-in olusdurulmasidir.
 
 # --------------------------------------------------Object-----------------------------------------------------
 

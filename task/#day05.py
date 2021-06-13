@@ -73,10 +73,8 @@ c.greet_user()
 
 
 class User:
-    count = 0
     def __init__(self,login_attempts):
         self.x = login_attempts
-        User.count += 1
 
 
     def increment_login_attempts(self):
@@ -84,11 +82,7 @@ class User:
 
     def reset_login_attempts(self):
         return 0
-        
-    @classmethod
-    def sayi(cls):
-        return (f"{cls.count} active")
-    
+   
 
 a = User(0)
 print(a.increment_login_attempts())
@@ -99,6 +93,4 @@ print(b.increment_login_attempts())
 
 c = User(2)
 print(c.increment_login_attempts())
-print(User.count)
-print(c.sayi())
 print(c.reset_login_attempts())

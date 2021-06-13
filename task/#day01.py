@@ -77,14 +77,14 @@ else:
 print((65 % 22) * (65 / 22)) 
 
 # 13)
-a=3
-b=0
-if (a-b) > (a*b):
+
+a=10
+b=8
+if (a-b) > (a // b):
     print("Greater")
-elif (a-b) == (a*b):
+elif (a-b) == (a // b):
     print("EQUAL")
 else:
-    (a-b) < (a*b)
     print("SMALLER")
 
 
@@ -103,9 +103,9 @@ c = random.randrange(1,8)
 print (math.sqrt(c))
 
 # 17)
-a = random.randrange(0, 1)
-b = random.randrange(1, 10)
-print(f"{a} * {b}")
+a = random.uniform(0, 1)
+b = random.uniform(1, 10)
+print(a * b)
 
 
 # 18)

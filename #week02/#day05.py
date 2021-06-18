@@ -42,12 +42,14 @@ K.teref()
 
 
 
-# -------------------------------------------------Netice
+# -------------------------------------------------Netice-------------------------------------------------
 
-# Abstrakt dərslərdən nə vaxt istifadə edecik?
-# Kodu bir-birinə yaxın olan bir neçə sinif arasında bölüşmək üçün mücərrəd dərslərdən istifadə edirik. 
+#--------------Abstrakt dərslərdən nə vaxt istifadə edecik?
 
+#-Kodu bir-birinə yaxın olan bir neçə sinif arasında bölüşmək üçün mücərrəd dərslərdən istifadə edirik. 
 
-# -------------------------------------------------Xülasə
-# Abstrakt siniflər, nümunə qura bilməyəcəyiniz siniflərdir. Yeni obyekt acmaq olmmur Abstrakt-dan.
-# Abstrakt sinifləri təyin etmək üçün abc modulundan istifadə edirik.
+#-Proyekte baslayandan ,evvel saytda bu hisseler olmalidi deyerek plan qururuq,
+# abstrakt bu zaman hemin planlari unudanda bize xatirladir(remind).
+
+#-Abstrakt siniflər, nümunə qura bilməyəcəyiniz siniflərdir. Yeni obyekt acmaq olmmur Abstrakt-dan.
+#-Abstrakt sinifləri təyin etmək üçün abc modulundan istifadə edirik.

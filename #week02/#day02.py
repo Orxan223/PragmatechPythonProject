@@ -17,7 +17,7 @@
 
 # Statik metodla class metodu arasındakı fərq:
 
-# Statik metod sinif haqqında heç bir şey bilmir və yalnız parametrlərlə məşğul olur.
+# Statik metod class haqqında heç bir şey bilmir və yalnız parametrlərlə məşğul olur.
 # Həm class, həm də obyekt tərəfindən adlandırıla bilər.
 # ---------Class.staticmethodFunc()
 #                     or
@@ -26,36 +26,38 @@
 
 # ------------------------------------------------Ne vaxd static methods istifade edirik?----------------------
 # Statik metodların məhdud istifadə vəziyyəti var,
-# çünki sinif metodları və ya bir sinif daxilində olan digər metodlar kimi,
-# sinifin öz xüsusiyyətlərinə daxil ola bilmirlər.
+# çünki class metodları və ya bir class daxilində olan digər metodlar kimi,
+# class-in öz xüsusiyyətlərinə daxil ola bilmirlər.
 
-# Bir sinifin hər hansı bir xüsusiyyətinə çatmayan,
-# lakin onun sinifə aid olduğu mənasını verən bir yardım proqramına ehtiyacınız olduqda,
+# Bir claass-in hər hansı bir xüsusiyyətine çatmayan,
+# lakin onun class-a aid olduğu mənasını veren bir yardım proqramına ehtiyacınız olduqda,
 # statik funksiyalardan istifadə edirik.
-# from datetime import date
 
-# class Person:
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
 
-#     #Class method to create a Person object by birth year.
-#     @classmethod
-#     def fromBirthYear(cls, name, year):
-#         return cls(name, date.today().year - year)
+from datetime import date
 
-#     @staticmethod
-#     def isAdult(age):
-#         return age > 18
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-# person1 = Person('orxan', 22)
-# person2 = Person.fromBirthYear('mayank', 1997)
+    #Class method to create a Person object by birth year.
+    @classmethod
+    def fromBirthYear(cls, name, year):
+        return cls(name, date.today().year - year)
 
-# print (person1.age)
-# print (person2.age)
+    @staticmethod
+    def isAdult(age):
+        return age > 18
 
-# # print the result
-# print (Person.isAdult(22))
+person1 = Person('orxan', 22)
+person2 = Person.fromBirthYear('mayank', 1997)
+
+print (person1.age)
+print (person2.age)
+
+# print the result
+print (Person.isAdult(22))
 
 # -----------------------------------------------------DUNDER METHOD--------------------------------------
 
@@ -131,51 +133,62 @@ f = School()
 f.student = "student"
 print(f.student)
 
-# 8)----------------------     __abs__ 
+# 8)----------------------     __abs__
 v = -1
 v.__abs__()
 print(abs(v))
 
 # 9)----------------------     __dir__
+
+
 class Nese:
     def __init__(self, x):
         self.x = x
 
+
 print(dir(Nese))
 
-# class Person:
-
-#     def __init__(self, person_name, person_age):
-#         self.name = person_name
-#         self.age = person_age
-
-#     def __str__(self):
-#         return f'Person name is {self.name} and age is {self.age}'
-
-#     def __repr__(self):
-#         return f'Person(name={self.name}, age={self.age})'
+# 9)----------------------     __repr__
 
 
-# p = Person('Pankaj', 34)
+class MyClass:
+    x = 0
+    y = ""
 
-# print(p.__str__())
-# print(p.__repr__())
-
-
-# class MyClass:
-#     x = 0
-#     y = ""
-
-#     def __init__(self, anyNumber, anyString):
-#         self.x = anyNumber
-#         self.y = anyString
-#     def __repr__ (self):
-#         return 'MyClass(x=' + str(self.x) + ' ,y=' + self.y + ')'
+    def __init__(self, anyNumber, anyString):
+        self.x = anyNumber
+        self.y = anyString
+    def __repr__ (self):
+        return 'MyClass(x=' + str(self.x) + ' , y=' + self.y + ')'
 
 
-# myObject = MyClass(12345, "Hello")
+myObject = MyClass(12345, "Hello")
 
-# print(myObject.__str__())
-# print(myObject)
-# print(str(myObject))
-# print(myObject.__repr__())
+print(myObject.__str__())
+print(myObject)
+print(str(myObject))
+print(myObject.__repr__())
+
+
+
+
+
+#--------------------------      __repr__  ve __str__ arasindaki ferq
+
+class Person:
+
+    def __init__(self, person_name, person_age):
+        self.name = person_name
+        self.age = person_age
+
+    def __str__(self):
+        return f'Person name is {self.name} and age is {self.age}'
+
+    def __repr__(self):
+        return f'Person(name={self.name}, age={self.age})'
+
+
+p = Person('Pankaj', 34)
+
+print(p.__str__())
+print(p.__repr__())

@@ -13,9 +13,17 @@ class year_graduated:
     def Aboutyear(self, a):
         self.year = a
 
+    @Aboutyear.deleter 
+    def Aboutyear(self):
+        print('Deleting name')
+        del self.year
+ 
+
 
 grad_obj = year_graduated()
 print(grad_obj.year)
 
 grad_obj.year = 2018
 print(grad_obj.year)
+
+del grad_obj.Aboutyear

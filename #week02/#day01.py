@@ -1,3 +1,5 @@
+#-----------------------------------------------Polimorfizm-------------------------------------------- 
+
 class Animal:
     def introduction(self):
         print("there are many types animal")

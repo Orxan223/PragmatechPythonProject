@@ -58,3 +58,4 @@ elif name_1_total < name_2_total:
 
 else:
     print(f"{name_1} and {name_2} your point is equal")
+

@@ -5,7 +5,7 @@ name_1 = input('Birinci oyuncunun adi :')
 name_2 = input('Ikinci oyuncunun adi :')
 
 print(f"Hormetli {name_1} ve {name_2} ")
-print("Her birinizin 5 cehd etme shansiniz var.Her duzgun texmin size 1 xal qazandiracaq. Ugurlar")
+print("Her birinizin 5 cehd etme shansiniz var.Her duzgun texmin size 1 xal qazandiracaq. Ugurlar!")
 
 name_1_total = 0
 name_2_total = 0

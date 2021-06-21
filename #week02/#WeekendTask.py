@@ -1,82 +1,60 @@
-#----------------------------------------------------Game Task-------------------------------------------------
-
-
-# ------------------------------------------------ HELE TAMAMLANMAYIB
+# --------------------------------------------WEEKEND TASK is completed--------------------------------------------
 import random
 
+name_1 = input('Birinci oyuncunun adi :')
+name_2 = input('Ikinci oyuncunun adi :')
 
-number = random.randint(1, 5)
-print(number)
-list = [1, 2, 3, 4, 5]
+print(f"Hormetli {name_1} ve {name_2} ")
+print("Her birinizin 5 cehd etme shansiniz var.Her duzgun texmin size 1 xal qazandiracaq. Ugurlar")
 
-player_1 = []
-player_2 = []
-xal = []
+name_1_total = 0
+name_2_total = 0
+xal = 1
 
-number_of_guesses = 0
+x = 1
+while (x < 6):
+    number = random.randint(1, 5)
+    print(number)
 
-total_player_1 = 0
-total_player_2 = 0
+    while(True):
+        name_1_guess = int(input("Enter your guess : "))
 
+        if name_1_guess == number:
+            name_1_total += xal
+            print("------------------------------")
+            print(f"1 point was added to you {name_1} !")
+            print("------------------------------")
 
-player_1 = input('Birinci oyuncunun adi :')
-player_2 = input('Ikinci oyuncunun adi :')
-print(f"Hormetli {player_1} ve {player_2} ")
-print("Her birinizin 5 cehd etme shansiniz var.Her duzgun texmin size 1 xal qazandiracaq. Ugurlar!")
-x=1
-while(x<6):
+        elif name_1_guess != number:
+            print(f"Sorry {name_1}, your guess is False")
 
-
-    while (True):
-        guess_1 = int(input("player_1 Eded daxil edin :"))
-        guess_1 = int(guess_1)
-        if guess_1 != number_of_guesses:
-            print(f"{player_1} sefdir")
-        else:  
-            print("False")
         break
 
-    if guess_1 == number_of_guesses:
-        print(f'{player_1} tebrikler')
-        player_1.append(xal)
-        print(f"player_1 sizin xaliniz{xal} ")
+    while(True):
+        name_2_guess = int(input("Enter your guess : "))
 
+        if name_2_guess == number:
+            name_2_total += xal
+            print("------------------------------")
+            print(f"1 point was added to you {name_2} !")
+            print("------------------------------")
 
+        elif name_2_guess != number:
+            print(f"Sorry {name_2}, your guess is false")
 
-    while (True):
-        guess_2 = int(input("player_2 Eded daxil edin :"))
-        guess_2 = int(guess_2)
-
-        if guess_2 != number_of_guesses:
-            print(f"{player_2} sefdir")
-
-        else:
-            print("False")
         break
 
-
-    if guess_2 == number_of_guesses:
-        print(f'{player_2} tebrikler')
-        player_2.append(xal)
-        print(f"player_2 sizin xaliniz{xal} ")
-            
-
-for x in player_1:
-    total_player_2 = total_player_1 + x
-print(f"{player_1} xaliniz :")
+    x += 1
 
 
-for y in player_2:
-    total_player_2 = total_player_2 + y
-print(f"{player_2} xaliniz :")
+if name_1_total > name_2_total:
+    print(f"{name_1}, you WIN!!!")
+    print(f"{name_1}, your total point is {name_1_total}")
 
-if total_player_1 > total_player_2:
-    print("Tebrikler siz qalibsiniz")
-
-
-if total_player_1 < total_player_2:
-    print("Tebrikler siz qalibsiniz")
+elif name_1_total < name_2_total:
+    print(f"{name_2}, you WIN!!!")
+    print(f"{name_2}, your total point is {name_2_total}")
 
 
 else:
-    print("Sizin xallar beraberdir")
+    print(f"{name_1} and {name_2} your point is equal")

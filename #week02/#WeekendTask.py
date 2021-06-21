@@ -14,7 +14,6 @@ xal = 1
 x = 1
 while (x < 6):
     number = random.randint(1, 5)
-    print(number)
 
     while(True):
         name_1_guess = int(input("Enter your guess : "))

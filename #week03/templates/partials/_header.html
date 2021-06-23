@@ -1,0 +1,316 @@
+{% load static %}
+<!-- page wrapper -->
+
+<body class="boxed_wrapper">
+
+    <!-- preloader -->
+    <div class="preloader">
+        <div id="handle-preloader" class="handle-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span data-text-preloader="N" class="letters-loading">
+                        N
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="X" class="letters-loading">
+                        X
+                    </span>
+                    <span data-text-preloader="L" class="letters-loading">
+                        L
+                    </span>
+                    <span data-text-preloader="Y" class="letters-loading">
+                        Y
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+
+    <!-- search-popup -->
+    <div id="search-popup" class="search-popup">
+        <div class="close-search"><span>Close</span></div>
+        <div class="popup-inner">
+            <div class="overlay-layer"></div>
+            <div class="search-form">
+                <form method="post" action="index.html">
+                    <div class="form-group">
+                        <fieldset>
+                            <input type="search" class="form-control" name="search-input" value=""
+                                placeholder="Search Here" required>
+                            <input type="submit" value="Search Now!" class="theme-btn style-four">
+                        </fieldset>
+                    </div>
+                </form>
+                <h3>Recent Search Keywords</h3>
+                <ul class="recent-searches">
+                    <li><a href="index.html">Finance</a></li>
+                    <li><a href="index.html">Idea</a></li>
+                    <li><a href="index.html">Service</a></li>
+                    <li><a href="index.html">Growth</a></li>
+                    <li><a href="index.html">Plan</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- search-popup end -->
+
+
+    <!-- main header -->
+    <header class="main-header style-three">
+        <div class="header-upper">
+            <div class="outer-box clearfix">
+                <div class="left-column pull-left clearfix">
+                    <div class="logo-box pull-left">
+                        <figure class="logo"><a href="index.html"><img src="{% static 'assets/images/logo-3.png' %}"
+                                    alt=""></a></figure>
+                    </div>
+                    <div class="menu-area pull-right clearfix">
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler">
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                        </div>
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li class="current dropdown"><a href="index-3.html">Home</a>
+                                        <ul>
+                                            <li><a href="index.html">Data Science<i class="flaticon-next"></i></a></li>
+                                            <li><a href="index-2.html">Artificial intelligence<i
+                                                        class="flaticon-next"></i></a></li>
+                                            <li><a href="index-3.html">Machine Learning<i class="flaticon-next"></i></a>
+                                            </li>
+                                            <li><a href="index-4.html">Business Intelligence<i
+                                                        class="flaticon-next"></i></a></li>
+                                            <li><a href="index-5.html">User Analysis<i class="flaticon-next"></i></a>
+                                            </li>
+                                            <li><a href="index-boxed.html">Home Boxed<i class="flaticon-next"></i></a>
+                                            </li>
+                                            <li><a href="index-rtl.html">Home RTL<i class="flaticon-next"></i></a></li>
+                                            <li><a href="index-onepage.html">Home OnePage<i
+                                                        class="flaticon-next"></i></a></li>
+                                            <li class="dropdown"><a href="index-3.html">Header Styles</a>
+                                                <ul>
+                                                    <li><a href="index.html">Header Style One<i
+                                                                class="flaticon-next"></i></a></li>
+                                                    <li><a href="index-2.html">Header Style Two<i
+                                                                class="flaticon-next"></i></a></li>
+                                                    <li><a href="index-3.html">Header Style Three<i
+                                                                class="flaticon-next"></i></a></li>
+                                                    <li><a href="index-4.html">Header Style Four<i
+                                                                class="flaticon-next"></i></a></li>
+                                                    <li><a href="index-5.html">Header Style Five<i
+                                                                class="flaticon-next"></i></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="index-3.html">Company</a>
+                                        <ul>
+                                            <li><a href="about.html">About Company<i class="flaticon-next"></i></a></li>
+                                            <li><a href="team.html">Meet Our Team<i class="flaticon-next"></i></a></li>
+                                            <li><a href="contact.html">Contact Us<i class="flaticon-next"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="index-3.html">Services</a>
+                                        <ul>
+                                            <li><a href="service.html">All Services<i class="flaticon-next"></i></a>
+                                            </li>
+                                            <li><a href="service-details.html">Service Details<i
+                                                        class="flaticon-next"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="index-3.html">Works</a>
+                                        <ul>
+                                            <li><a href="project.html">Project 2 Columns<i
+                                                        class="flaticon-next"></i></a></li>
+                                            <li><a href="project-2.html">Project 3 Columns<i
+                                                        class="flaticon-next"></i></a></li>
+                                            <li><a href="project-3.html">Case Studies<i class="flaticon-next"></i></a>
+                                            </li>
+                                            <li><a href="project-details.html">Case Details<i
+                                                        class="flaticon-next"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="index-3.html">Blog</a>
+                                        <ul>
+                                            <li><a href="blog-1.html">Classic Grid<i class="flaticon-next"></i></a></li>
+                                            <li><a href="blog-2.html">Classic With S/B<i class="flaticon-next"></i></a>
+                                            </li>
+                                            <li><a href="blog-3.html">Modern With S/B<i class="flaticon-next"></i></a>
+                                            </li>
+                                            <li><a href="blog-4.html">Masonry<i class="flaticon-next"></i></a></li>
+                                            <li><a href="blog-details.html">Single Post<i class="flaticon-next"></i></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="index-3.html">Elements</a>
+                                        <div class="megamenu">
+                                            <div class="row clearfix">
+                                                <div class="col-lg-3 column">
+                                                    <ul>
+                                                        <li>
+                                                            <h4>Elements 1</h4>
+                                                        </li>
+                                                        <li><a href="service-element-1.html">Service 01</a></li>
+                                                        <li><a href="service-element-2.html">Service 02</a></li>
+                                                        <li><a href="about-element-1.html">About 01</a></li>
+                                                        <li><a href="about-element-2.html">About 02</a></li>
+                                                        <li><a href="about-element-3.html">About 03</a></li>
+                                                        <li><a href="about-element-4.html">About 04</a></li>
+                                                        <li><a href="about-element-5.html">About 05</a></li>
+                                                        <li><a href="about-element-6.html">About 06</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 column">
+                                                    <ul>
+                                                        <li>
+                                                            <h4>Elements 2</h4>
+                                                        </li>
+                                                        <li><a href="work-element-1.html">Work 01</a></li>
+                                                        <li><a href="work-element-2.html">Work 02</a></li>
+                                                        <li><a href="skills-element-1.html">Skills 01</a></li>
+                                                        <li><a href="skills-element-2.html">Skills 02</a></li>
+                                                        <li><a href="case-element-1.html">Case 01</a></li>
+                                                        <li><a href="case-element-2.html">Case 02</a></li>
+                                                        <li><a href="case-element-3.html">Case 03</a></li>
+                                                        <li><a href="case-element-4.html">Case 04</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 column">
+                                                    <ul>
+                                                        <li>
+                                                            <h4>Elements 3</h4>
+                                                        </li>
+                                                        <li><a href="counter-element-1.html">Fun Fact 01</a></li>
+                                                        <li><a href="counter-element-2.html">Fun Fact 02</a></li>
+                                                        <li><a href="counter-element-3.html">Fun Fact 03</a></li>
+                                                        <li><a href="counter-element-4.html">Fun Fact 04</a></li>
+                                                        <li><a href="news-element-1.html">News 01</a></li>
+                                                        <li><a href="news-element-2.html">News 02</a></li>
+                                                        <li><a href="news-element-3.html">News 03</a></li>
+                                                        <li><a href="news-element-4.html">News 04</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 column">
+                                                    <ul>
+                                                        <li>
+                                                            <h4>Elements 4</h4>
+                                                        </li>
+                                                        <li><a href="choose-element-1.html">Choose Us 01</a></li>
+                                                        <li><a href="choose-element-2.html">Choose Us 02</a></li>
+                                                        <li><a href="choose-element-3.html">Choose Us 03</a></li>
+                                                        <li><a href="team-element-1.html">Team 01</a></li>
+                                                        <li><a href="team-element-2.html">Team 02</a></li>
+                                                        <li><a href="team-element-3.html">Team 03</a></li>
+                                                        <li><a href="team-element-4.html">Team 04</a></li>
+                                                        <li><a href="technology-element-1.html">Technology</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown"><a href="index-3.html">Pages</a>
+                                        <ul>
+                                            <li><a href="error.html">404<i class="flaticon-next"></i></a></li>
+                                            <li><a href="coming-soon.html">Coming Soon<i class="flaticon-next"></i></a>
+                                            </li>
+                                            <li><a href="faq.html">Faq’s<i class="flaticon-next"></i></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="search-box-outer">
+                            <form action="index.html" method="post" class="search-btn">
+                                <button type="button" class="search-toggler"><i
+                                        class="flaticon-search"></i>Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-column pull-right clearfix">
+                    <div class="btn-box"><a href="index-3.html" class="theme-btn style-six">Get in Touch</a></div>
+                    <div class="language">
+                        <div class="lang-btn">
+                            <span class="flag"><img src="assets/images/icons/icon-lang.png" alt=""
+                                    title="English"></span>
+                            <span class="txt">Eng</span>
+                            <span class="arrow fa fa-angle-down"></span>
+                        </div>
+                        <div class="lang-dropdown">
+                            <ul>
+                                <li><a href="index.html">German</a></li>
+                                <li><a href="index.html">Italian</a></li>
+                                <li><a href="index.html">Chinese</a></li>
+                                <li><a href="index.html">Russian</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="social-links clearfix">
+                        <li><a href="index-3.html"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="index-3.html"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="index-3.html"><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--sticky Header-->
+        <div class="sticky-header">
+            <div class="outer-box clearfix">
+                <div class="left-column pull-left">
+                    <figure class="logo-box"><a href="index.html"><img src="assets/images/small-logo-3.png" alt=""></a>
+                    </figure>
+                    <div class="menu-area">
+                        <nav class="main-menu clearfix">
+                            <!--Keep This Empty / Menu will come through Javascript-->
+                        </nav>
+                        <div class="search-box-outer">
+                            <form action="index.html" method="post" class="search-btn">
+                                <button type="button" class="search-toggler"><i
+                                        class="flaticon-search"></i>Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-column pull-right clearfix">
+                    <div class="btn-box"><a href="index-3.html" class="theme-btn style-six">Get in Touch</a></div>
+                    <div class="language">
+                        <div class="lang-btn">
+                            <span class="flag"><img src="assets/images/icons/icon-lang.png" alt=""
+                                    title="English"></span>
+                            <span class="txt">Eng</span>
+                            <span class="arrow fa fa-angle-down"></span>
+                        </div>
+                        <div class="lang-dropdown">
+                            <ul>
+                                <li><a href="index.html">German</a></li>
+                                <li><a href="index.html">Italian</a></li>
+                                <li><a href="index.html">Chinese</a></li>
+                                <li><a href="index.html">Russian</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="social-links clearfix">
+                        <li><a href="index-3.html"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="index-3.html"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="index-3.html"><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main-header end -->
+
+
+
+
+
+ 

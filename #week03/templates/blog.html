@@ -1,0 +1,351 @@
+{% extends "partials/_base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- page wrapper -->
+<body class="boxed_wrapper">
+
+    <!-- preloader -->
+    <div class="preloader">
+        <div id="handle-preloader" class="handle-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span data-text-preloader="N" class="letters-loading">
+                        N
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="X" class="letters-loading">
+                        X
+                    </span>
+                    <span data-text-preloader="L" class="letters-loading">
+                        L
+                    </span>
+                    <span data-text-preloader="Y" class="letters-loading">
+                        Y
+                    </span>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <!-- preloader end -->
+
+
+    <!-- search-popup -->
+    <div id="search-popup" class="search-popup">
+        <div class="close-search"><span>Close</span></div>
+        <div class="popup-inner">
+            <div class="overlay-layer"></div>
+            <div class="search-form">
+                <form method="post" action="index.html">
+                    <div class="form-group">
+                        <fieldset>
+                            <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                            <input type="submit" value="Search Now!" class="theme-btn style-four">
+                        </fieldset>
+                    </div>
+                </form>
+                <h3>Recent Search Keywords</h3>
+                <ul class="recent-searches">
+                    <li><a href="index.html">Finance</a></li>
+                    <li><a href="index.html">Idea</a></li>
+                    <li><a href="index.html">Service</a></li>
+                    <li><a href="index.html">Growth</a></li>
+                    <li><a href="index.html">Plan</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- search-popup end -->
+
+
+    <!-- main header -->
+
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="index.html"><img src="{% static 'assets/images/logo.png' %}" alt="" title=""></a></div>
+            <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            <div class="contact-info">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>Chicago 12, Melborne City, USA</li>
+                    <li><a href="tel:+8801682648101">+88 01682648101</a></li>
+                    <li><a href="mailto:info@example.com">info@example.com</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <ul class="clearfix">
+                    <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-pinterest-p"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div><!-- End Mobile Menu -->
+
+
+    <!--Page Title-->
+    <section class="page-title text-center style-two">
+        <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-62.png);"></div>
+        <div class="auto-container">
+            <div class="content-box">
+                <h1>Modern With Sidebar</h1>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="index.html">Home</a></li>
+                    <li><span>\\</span></li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+
+    <!-- blog-modern-sidebar -->
+    <section class="sidebar-page-container blog-modern-sidebar">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 col-sm-12 content-side">
+                    <div class="blog-modern-content">
+                        <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box">
+                                    <img src="{% static 'assets/images/news/news-13.jpg" alt="">
+                                    <a href="{% static 'assets/images/news/news-13.jpg" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                                </figure>
+                                <div class="lower-content">
+                                    <div class="title-box">
+                                        <div class="post-date"><p>05</p><span>Jan</span></div>
+                                        <div class="file-box"><i class="far fa-folder-open"></i><p>Data Engineering</p></div>
+                                        <h3><a href="blog-details.html">Naxly Named as a Global Leader in Big Data</a></h3>
+                                    </div>
+                                    <div class="text">
+                                        <p>Equal blame belongs too those who fail in their through weakness will shrinking power of choice is untrammelled and when nothing prevents our being.</p>
+                                    </div>
+                                    <div class="link"><a href="blog-details.html" class="btn-style-four">Read More<span>+</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-block-two wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box">
+                                    <img src="{% static 'assets/images/news/news-14.jpg" alt="">
+                                    <a href="{% static 'assets/images/news/news-14.jpg" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                                    <div class="btn-box"><a href="blog-details.html">Read More<span>+</span></a></div>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box">
+                                    <img src="{% static 'assets/images/news/news-15.jpg" alt="">
+                                    <a href="{% static 'assets/images/news/news-15.jpg" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                                </figure>
+                                <div class="lower-content">
+                                    <div class="title-box">
+                                        <div class="post-date"><p>01</p><span>Jan</span></div>
+                                        <div class="file-box"><i class="far fa-folder-open"></i><p>Data Strategy</p></div>
+                                        <h3><a href="blog-details.html">Naxly as the Winners in Global Agency Awards</a></h3>
+                                    </div>
+                                    <div class="text">
+                                        <p>Obligations of business it will frequently occur that pleasures have be repudiated works frequently occur that pleasures have to be repudiated and annoyance.</p>
+                                    </div>
+                                    <div class="link"><a href="blog-details.html" class="btn-style-four">Read More<span>+</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box">
+                                    <img src="{% static 'assets/images/news/news-16.jpg" alt="">
+                                    <a href="{% static 'assets/images/news/news-16.jpg" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                                </figure>
+                                <div class="lower-content">
+                                    <div class="title-box">
+                                        <div class="post-date"><p>31</p><span>Dec</span></div>
+                                        <div class="file-box"><i class="far fa-folder-open"></i><p>Data Engineering</p></div>
+                                        <h3><a href="blog-details.html">Naxly Named as a Global Leader in Big Data</a></h3>
+                                    </div>
+                                    <div class="text">
+                                        <p>Equal blame belongs too those who fail in their through weakness will shrinking power of choice is untrammelled and when nothing prevents our being.</p>
+                                    </div>
+                                    <div class="link"><a href="blog-details.html" class="btn-style-four">Read More<span>+</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box">
+                                    <img src="{% static 'assets/images/news/news-17.jpg" alt="">
+                                    <a href="{% static 'assets/images/news/news-17.jpg" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                                </figure>
+                                <div class="lower-content">
+                                    <div class="title-box">
+                                        <div class="post-date"><p>30</p><span>Dec</span></div>
+                                        <div class="file-box"><i class="far fa-folder-open"></i><p>ML Consulting</p></div>
+                                        <h3><a href="blog-details.html">The Current State of Artificial Intelligence</a></h3>
+                                    </div>
+                                    <div class="text">
+                                        <p>When our power choice untrammelled and then prevents our being able pleasure every pleasure is to be welcomed and every pain avoided.</p>
+                                    </div>
+                                    <div class="link"><a href="blog-details.html" class="btn-style-four">Read More<span>+</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box">
+                                    <img src="{% static 'assets/images/news/news-18.jpg" alt="">
+                                    <a href="{% static 'assets/images/news/news-18.jpg" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                                </figure>
+                                <div class="lower-content">
+                                    <div class="title-box">
+                                        <div class="post-date"><p>29</p><span>Dec</span></div>
+                                        <div class="file-box"><i class="far fa-folder-open"></i><p>Data Strategy</p></div>
+                                        <h3><a href="blog-details.html">Naxly as the Winners in Global Agency Awards</a></h3>
+                                    </div>
+                                    <div class="text">
+                                        <p>Obligations of business it will frequently occur that pleasures have be repudiated works frequently occur that pleasures have to be repudiated and annoyance.</p>
+                                    </div>
+                                    <div class="link"><a href="blog-details.html" class="btn-style-four">Read More<span>+</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination-wrapper text-right">
+                        <ul class="pagination clearfix">
+                            <li><a href="project-2.html"><i class="fas fa-angle-double-left"></i>&nbsp;&nbsp;Prev</a></li>
+                            <li><a href="project-2.html" class="active">1</a></li>
+                            <li><a href="project-2.html">2</a></li>
+                            <li><a href="project-2.html">3</a></li>
+                            <li><a href="project-2.html">Next&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 sidebar-side">
+                    <div class="sidebar">
+                        <div class="sidebar-widget sidebar-search">
+                            <div class="widget-title">
+                                <h3>Search</h3>
+                            </div>
+                            <div class="search-box">
+                                <form action="blog-details.html" method="post">
+                                    <div class="form-group">
+                                        <input type="search" name="search-field" placeholder="Keyword..." required="">
+                                        <button type="submit" class="theme-btn style-one">Search</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget sidebar-categories">
+                            <div class="widget-title">
+                                <h3>Categories</h3>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="categories-list clearfix">
+                                    <li><a href="blog-details.html">AI (6)</a></li>
+                                    <li><a href="blog-details.html" class="active">BI & Big Data (14)</a></li>
+                                    <li><a href="blog-details.html">Data Engineering (10)</a></li>
+                                    <li><a href="blog-details.html">Data Strategy (5)</a></li>
+                                    <li><a href="blog-details.html">MI Consulting (8)</a></li>
+                                    <li><a href="blog-details.html">R&D</a></li>
+                                    <li><a href="blog-details.html">Social Media</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget sidebar-post">
+                            <div class="widget-title">
+                                <h3>Popular Post</h3>
+                            </div>
+                            <div class="post-inner">
+                                <div class="post">
+                                    <div class="post-date"><p>05</p><span>Jan</span></div>
+                                    <div class="file-box"><i class="far fa-folder-open"></i><p>Data Engineering</p></div>
+                                    <h5><a href="blog-details.html">Naxly Named as a Global Leader in Big Data</a></h5>
+                                </div>
+                                <div class="post">
+                                    <div class="post-date"><p>16</p><span>Dec</span></div>
+                                    <div class="file-box"><i class="far fa-folder-open"></i><p>Data Strategy</p></div>
+                                    <h5><a href="blog-details.html">Naxly as the Winners in Global Agency Awards</a></h5>
+                                </div>
+                                <div class="post">
+                                    <div class="post-date"><p>10</p><span>Nov</span></div>
+                                    <div class="file-box"><i class="far fa-folder-open"></i><p>MI Consulting</p></div>
+                                    <h5><a href="blog-details.html">The Current State of Artificial Intelligence</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget sidebar-instagram">
+                            <div class="widget-title">
+                                <h3>Instagram Feed</h3>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="image-list clearfix">
+                                    <li class="clearfix">
+                                        <figure class="image"><a href="blog-details.html"><img src="{% static 'assets/images/resource/instagram-1.jpg" alt=""></a></figure>
+                                        <figure class="image"><a href="blog-details.html"><img src="{% static 'assets/images/resource/instagram-3.jpg" alt=""></a></figure>
+                                    </li>
+                                    <li class="clearfix">
+                                        <figure class="image"><a href="blog-details.html"><img src="{% static 'assets/images/resource/instagram-2.jpg" alt=""></a></figure>
+                                        <figure class="image"><a href="blog-details.html"><img src="{% static 'assets/images/resource/instagram-4.jpg" alt=""></a></figure>
+                                        <figure class="image"><a href="blog-details.html"><img src="{% static 'assets/images/resource/instagram-5.jpg" alt=""></a></figure>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget sidebar-subscribe">
+                            <div class="widget-title">
+                                <h3>Subscribe Us</h3>
+                            </div>
+                            <div class="widget-content">
+                                <p>Subscribe us and get latest news and updates to your inbox directly.</p>
+                                <form action="blog-details.html" method="post" class="subscribe-form">
+                                    <div class="form-group">
+                                        <i class="far fa-envelope"></i>
+                                        <input type="email" name="email" placeholder="Email Address" required="">
+                                        <button type="submit"><i class="fas fa-rss"></i>Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget sidebar-tags">
+                            <div class="widget-title">
+                                <h3>Tag Cloud</h3>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="tags-list clearfix">
+                                    <li><a href="blog-details.html">Analysis</a></li>
+                                    <li><a href="blog-details.html"><span>Consulting</span></a></li>
+                                    <li><a href="blog-details.html">Data</a></li>
+                                    <li><a href="blog-details.html">Engineering</a></li>
+                                    <li><a href="blog-details.html">Global</a></li>
+                                    <li><a href="blog-details.html">Hi-Tech</a></li>
+                                    <li><a href="blog-details.html"><span>Infographic</span></a></li>
+                                    <li><a href="blog-details.html">Industries</a></li>
+                                    <li><a href="blog-details.html"><span>License</span></a></li>
+                                    <li><a href="blog-details.html">Manintainl</a></li>
+                                    <li><a href="blog-details.html"><span>Software</span></a></li>
+                                    <li><a href="blog-details.html">Solutions</a></li>
+                                    <li><a href="blog-details.html">Strategy</a></li>
+                                    <li><a href="blog-details.html">Transform</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog-modern-sidebar end -->
+
+
+    {% endblock %}

@@ -1,0 +1,105 @@
+{% extends "partials/_base.html" %}
+{% load static %}
+{% block content %}
+
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="index.html"><img src="{% static 'assets/images/logo.png '%}" alt="" title=""></a></div>
+            <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            <div class="contact-info">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>Chicago 12, Melborne City, USA</li>
+                    <li><a href="tel:+8801682648101">+88 01682648101</a></li>
+                    <li><a href="mailto:info@example.com">info@example.com</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <ul class="clearfix">
+                    <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-pinterest-p"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div><!-- End Mobile Menu -->
+
+
+    <!--Page Title-->
+    <section class="page-title text-center style-two">
+        <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-62.png);"></div>
+        <div class="auto-container">
+            <div class="content-box">
+                <h1>Elements</h1>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="index.html">Home</a></li>
+                    <li><span>\\</span></li>
+                    <li>Skills 01</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+
+    <!-- skills-section -->
+    <section class="skills-section">
+        <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-4.png);"></div>
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="col-lg-6 col-md-6 col-sm-12 image-column">
+                    <div class="image-box wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <figure class="image js-tilt"><img src="{% static 'assets/images/resource/illastration-1.png' %}" alt=""></figure>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 content-column">
+                    <div id="content_block_02">
+                        <div class="content-box">
+                            <div class="sec-title text-left">
+                                <p>Skills & Facts</p>
+                                <h2>We keep our self updated with latest trends</h2>
+                                <div class="decor" style="background-image: url(assets/images/icons/decor-1.png);"></div>
+                            </div>
+                            <div class="text">
+                                <p>As a solution providing company we offer a  range consulting, development quality testing services with 100% satisfaction.</p>
+                            </div>
+                            <div class="inner-box">
+                                <div class="progress-box">
+                                    <h5>Data Consulting</h5>
+                                    <div class="icon-box"><i class="flaticon-chat"></i></div>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="62%"><div class="count-text">62%</div></div>
+                                    </div>
+                                </div>
+                                <div class="progress-box">
+                                    <h5>Big Data & BI</h5>
+                                    <div class="icon-box"><i class="flaticon-cloud-computing"></i></div>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="89%"><div class="count-text">89%</div></div>
+                                    </div>
+                                </div>
+                                <div class="progress-box">
+                                    <h5>Predictive Analysis</h5>
+                                    <div class="icon-box"><i class="flaticon-analysis-1"></i></div>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="75%"><div class="count-text">75%</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills-section end -->
+
+
+    {% endblock %}

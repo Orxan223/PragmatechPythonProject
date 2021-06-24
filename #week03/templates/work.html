@@ -1,0 +1,110 @@
+{% extends "partials/_base.html" %}
+{% load static %}
+{% block content %}
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="index.html"><img src="assets/images/logo.png" alt="" title=""></a></div>
+            <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            <div class="contact-info">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>Chicago 12, Melborne City, USA</li>
+                    <li><a href="tel:+8801682648101">+88 01682648101</a></li>
+                    <li><a href="mailto:info@example.com">info@example.com</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <ul class="clearfix">
+                    <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-pinterest-p"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div><!-- End Mobile Menu -->
+
+
+    <!--Page Title-->
+    <section class="page-title text-center style-two">
+        <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-62.png);"></div>
+        <div class="auto-container">
+            <div class="content-box">
+                <h1>Elements</h1>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="index.html">Home</a></li>
+                    <li><span>\\</span></li>
+                    <li>Work 02</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+
+    <!-- process-style-two -->
+    <section class="process-style-two sec-pad">
+        <div class="auto-container">
+            <div class="inner-content">
+                <div class="line" style="background-image: url(assets/images/icons/line-1.png);"></div>
+                <div class="row clearfix">
+                    <div class="col-lg-4 col-md-6 col-sm-12 work-block">
+                        <div class="work-block-two">
+                            <div class="inner-box">
+                                <div class="arrow-box" style="background-image: url(assets/images/icons/arrow-1.png);"></div>
+                                <div class="icon-box">
+                                    <div class="border-line" style="background-image: url(assets/images/icons/border-1.png);"></div>
+                                    <i class="flaticon-big-data"></i>
+                                </div>
+                                <div class="count-box wow zoomIn animated" data-wow-delay="00ms" data-wow-duration="1500ms"><span>01</span></div>
+                                <div class="content-box wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <h4><a href="index-2.html">Frame the Problem</a></h4>
+                                    <p>To take a trivial example, which idea of ever undertakes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 work-block">
+                        <div class="work-block-two">
+                            <div class="inner-box">
+                                <div class="arrow-box" style="background-image: url(assets/images/icons/arrow-1.png);"></div>
+                                <div class="icon-box">
+                                    <div class="border-line" style="background-image: url(assets/images/icons/border-1.png);"></div>
+                                    <i class="flaticon-ui"></i>
+                                </div>
+                                <div class="count-box wow zoomIn animated" data-wow-delay="200ms" data-wow-duration="1500ms"><span>02</span></div>
+                                <div class="content-box wow slideInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                    <h4><a href="index-2.html">Collect the Data</a></h4>
+                                    <p>Best every pleasure is too welcomed every pain avoided.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 work-block">
+                        <div class="work-block-two">
+                            <div class="inner-box">
+                                <div class="icon-box">
+                                    <div class="border-line" style="background-image: url(assets/images/icons/border-1.png);"></div>
+                                    <i class="flaticon-brain"></i>
+                                </div>
+                                <div class="count-box wow zoomIn animated" data-wow-delay="400ms" data-wow-duration="1500ms"><span>03</span></div>
+                                <div class="content-box wow slideInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                    <h4><a href="index-2.html">Process the Data</a></h4>
+                                    <p>Have to be repudiated annoyances accepted the wise.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- process-style-two end -->
+
+
+    {% endblock %}

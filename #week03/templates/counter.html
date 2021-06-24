@@ -1,0 +1,102 @@
+{% extends "partials/_base.html" %}
+{% load static %}
+{% block content %}
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="index.html"><img src="{% static 'assets/images/logo.png" alt="" title=""></a></div>
+            <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            <div class="contact-info">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>Chicago 12, Melborne City, USA</li>
+                    <li><a href="tel:+8801682648101">+88 01682648101</a></li>
+                    <li><a href="mailto:info@example.com">info@example.com</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <ul class="clearfix">
+                    <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-pinterest-p"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div><!-- End Mobile Menu -->
+
+
+    <!--Page Title-->
+    <section class="page-title text-center style-two">
+        <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-62.png);"></div>
+        <div class="auto-container">
+            <div class="content-box">
+                <h1>Elements</h1>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="index.html">Home</a></li>
+                    <li><span>\\</span></li>
+                    <li>Fun Fact 03</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+
+    <!-- funfact-style-two -->
+    <section class="funfact-style-two">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-6 col-sm-12 counter-block">
+                    <div class="counter-block-two wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="count-outer count-box">
+                                <span class="count-text" data-speed="1500" data-stop="3.5">0</span>k
+                            </div>
+                            <h4>Projects Completed</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 counter-block">
+                    <div class="counter-block-two wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="count-outer count-box">
+                                <span class="count-text" data-speed="1500" data-stop="2.8">0</span>k
+                            </div>
+                            <h4>Industrires Served</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 counter-block">
+                    <div class="counter-block-two wow slideInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="count-outer count-box">
+                                <span class="count-text" data-speed="1500" data-stop="139">0</span>
+                            </div>
+                            <h4>Expert Team Mates</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 counter-block">
+                    <div class="counter-block-two wow slideInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="count-outer count-box">
+                                <span class="count-text" data-speed="1500" data-stop="14">0</span>m
+                            </div>
+                            <h4>Happy Customers</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- funfact-style-two end -->
+
+
+  
+{% endblock %}

@@ -2,18 +2,13 @@
 {% load static %}
 {% block content %}
 
-
-
-
-
-
    <!--Page Title-->
    <section class="page-title text-center style-two">
     <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-62.png);"></div>
     <div class="auto-container">
         <div class="content-box">
             <ul class="bread-crumb clearfix">
-                <li><a href="index.html"><h1>Home</h1></a></li>
+                <li><a href="{% url 'index' %}"><h1>Home</h1></a></li>
                
             </ul>
         </div>
@@ -99,20 +94,17 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                     <div id="content_block_05">
                         <div class="content-box">
-                        <!-- {% for x in about %} -->
                             <div class="sec-title text-left">
                                 <p>About Company</p>
-                                <!-- <h4>{{x.title}}</h4> -->
+                                <h2>Mission is to bring the power of AI to every business</h2>
                                 <div class="decor" style="background-image: url(assets/images/icons/decor-1.png);"></div>
                             </div>
                             <div class="text">
-                                <!-- <p>{{x.text}}</p>
-                                <p>{{x.text}}</p> -->
+                                <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it who do not know how to pursue pleasure rationally encounter.</p>
+                                <p>Which of us ever undertakes laborious physical exercise, except to obtain advantage from it who do not know how to pursue pleasure.</p>
                             </div>
-                            <div class="btn-box"><a href="{% url 'about' %}" class="theme-btn style-six">Read More</a></div>
-                        <!-- {%endfor%} -->
+                            <div class="btn-box"><a href="about.html" class="theme-btn style-six">Read More</a></div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -420,7 +412,7 @@
                                 <div class="bg-pattern" style="background-image: url(assets/images/icons/icon-bg-1.png);"></div>
                                 <div class="overlay-pattern" style="background-image: url(assets/images/icons/icon-bg-2.png);"></div>
                             </div>
-                            <h4><a href="{% url 'index' %}">Frame the Problem</a></h4>
+                            <h4><a href="{% url 'work' %}">Frame the Problem</a></h4>
                             <p>To take a trivial example, which idea of ever undertakes.</p>
                         </div>
                     </div>
@@ -434,7 +426,7 @@
                                 <div class="bg-pattern" style="background-image: url(assets/images/icons/icon-bg-1.png);"></div>
                                 <div class="overlay-pattern" style="background-image: url(assets/images/icons/icon-bg-2.png);"></div>
                             </div>
-                            <h4><a href="{% url 'index' %}">Collect the Data</a></h4>
+                            <h4><a href="{% url 'work' %}">Collect the Data</a></h4>
                             <p>Best every pleasure is too welcomed every pain avoided.</p>
                         </div>
                     </div>
@@ -448,7 +440,7 @@
                                 <div class="bg-pattern" style="background-image: url(assets/images/icons/icon-bg-1.png);"></div>
                                 <div class="overlay-pattern" style="background-image: url(assets/images/icons/icon-bg-2.png);"></div>
                             </div>
-                            <h4><a href="{% url 'index' %}">Process the Data</a></h4>
+                            <h4><a href="{% url 'work' %}">Process the Data</a></h4>
                             <p>Have to be repudiated annoyances accepted the wise.</p>
                         </div>
                     </div>
@@ -594,9 +586,7 @@
                                         <div class="bar-inner count-bar" data-percent="75%"><div class="count-text">75%</div></div>
                                     </div>
                                 </div>
-                                <div class="btn-box pull-right mt-60">
-                                    <a href="{% url 'index' %}" class="btn-style-eight">Read More</a>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>

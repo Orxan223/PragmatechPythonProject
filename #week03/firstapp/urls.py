@@ -3,15 +3,32 @@ from django.urls import path
 from .views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',index),
-    path('blog/',blog),
-    path('about/',about),
-    path('case/',case),
-    path('choose/',choose),
-    path('counter/',counter),
-    path('news/',news),
-    path('service/',service),
-    path('skills/',skills),
-    path('team/',team),
-    path('work/',work),
+    path('', index, name='index'),
+
+    path('blog/', blog, name='blog'),
+
+    path('technology/',technology,name='technology'),
+
+    path('about/',about,name='about'),
+
+    path('case/',case,name='case'),
+
+    path('work/',work,name='work'),
+
+    path('counter/',counter,name='counter'),
+
+    path('news/',news,name='news'),
+
+
+    path('skills/',skills,name='skills'),
+
+    path('team/',team,name='team'),
+
+     path('choose/',choose,name='choose'),
+
+
+     path('contact/',contact,name='contact'),
+
+
+
 ]

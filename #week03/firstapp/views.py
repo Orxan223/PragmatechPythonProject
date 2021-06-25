@@ -11,15 +11,12 @@ def blog(request):
 def about(request):
     return render(request, "about.html")
 
-
+def technology(request):
+    return render(request, "technology.html")
 
 def case(request):
     return render(request, "case.html")
 
-
-    
-def choose(request):
-    return render(request, "choose.html")
 
 
 def counter(request):
@@ -32,9 +29,10 @@ def news(request):
 
 
 
+def work(request):
+    return render(request, "work.html")
 
-def service(request):
-    return render(request, "service.html")
+
 
 
 
@@ -46,5 +44,10 @@ def team(request):
     return render(request, "team.html")
 
 
-def work(request):
-    return render(request, "work.html")
+
+def choose(request):
+    return render(request, "choose.html")
+
+
+def contact(request):
+    return render(request, "contact.html")

@@ -2,86 +2,53 @@
 {% load static %}
 {% block content %}
 
-    <!-- Mobile Menu  -->
-    <div class="mobile-menu">
-        <div class="menu-backdrop"></div>
-        <div class="close-btn"><i class="fas fa-times"></i></div>
-        
-        <nav class="menu-box">
-            <div class="nav-logo"><a href="index.html"><img src="{% static 'assets/images/logo.png' %}" alt="" title=""></a></div>
-            <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-            <div class="contact-info">
-                <h4>Contact Info</h4>
-                <ul>
-                    <li>Chicago 12, Melborne City, USA</li>
-                    <li><a href="tel:+8801682648101">+88 01682648101</a></li>
-                    <li><a href="mailto:info@example.com">info@example.com</a></li>
-                </ul>
-            </div>
-            <div class="social-links">
-                <ul class="clearfix">
-                    <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
-                    <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
-                    <li><a href="index.html"><span class="fab fa-pinterest-p"></span></a></li>
-                    <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
-                    <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
-                </ul>
-            </div>
-        </nav>
-    </div><!-- End Mobile Menu -->
 
 
-    <!--Page Title-->
-    <section class="page-title text-center style-two">
-        <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-62.png);"></div>
+
+    <!-- chooseus-section -->
+    <section class="chooseus-section">
         <div class="auto-container">
-            <div class="content-box">
-                <h1>Elements</h1>
-                <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">Home</a></li>
-                    <li><span>\\</span></li>
-                    <li>Choose Us 03</li>
-                </ul>
+            <div class="sec-title text-center style-two">
+                <p>Why Choose Us</p>
+                <h2>Reason for people choose us</h2>
+                <div class="decor" style="background-image: url(assets/images/icons/decor-1.png);"></div>
             </div>
-        </div>
-    </section>
-    <!--End Page Title-->
-
-
-    <!-- chooseus-style-three -->
-    <section class="chooseus-style-three sec-pad">
-        <div class="auto-container">
             <div class="row clearfix">
-                <div class="col-lg-4 col-md-6 col-sm-12 inner-column">
-                    <div class="inner-box">
-                        <div class="sec-title text-left">
-                            <p>Why Choose Us</p>
-                            <h2>Reason for choosing</h2>
-                            <div class="decor" style="background-image: url(assets/images/icons/decor-1.png);"></div>
-                        </div>
-                        <div class="single-item">
-                            <h3>Value for Results</h3>
-                            <div class="box">
-                                <div class="icon-box"><i class="flaticon-analysis"></i></div>
-                                <p>Except to obtain some advantage from who has any right to find.</p>
+                <div class="col-lg-6 col-md-6 col-sm-12 content-column">
+                    <div id="content_block_04">
+                        <div class="content-box">
+                            <div class="single-item">
+                                <div class="icon-box">
+                                    <div class="bg-layer" style="background-image: url(assets/images/icons/icon-bg-4.png);"></div>
+                                    <i class="flaticon-global"></i>
+                                </div>
+                                <div class="box">
+                                    <h4>Global Experience</h4>
+                                    <p>Nor again is there anyone who loves or pursues pain of itself, because circumstances.</p>
+                                    <a href="index-2.html"><i class="fas fa-arrow-right"></i>More Details</a>
+                                </div>
+                            </div>
+                            <div class="single-item text-right">
+                                <div class="icon-box">
+                                    <div class="bg-layer" style="background-image: url(assets/images/icons/icon-bg-4.png);"></div>
+                                    <i class="flaticon-analysis"></i>
+                                </div>
+                                <div class="box">
+                                    <h4>Value for Results</h4>
+                                    <p>Except obtain some advantages from ithas any to find fault with a consequences.</p>
+                                    <a href="index-2.html">More Details<i class="fas fa-arrow-left"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 inner-column">
-                    <div class="inner-box">
-                        <div class="single-item">
-                            <h3>Global Experience</h3>
-                            <div class="box">
-                                <div class="icon-box"><i class="flaticon-global"></i></div>
-                                <p>Nor again is there anyone who loves or pursues or desires</p>
-                            </div>
-                        </div>
-                        <div class="single-item">
-                            <h3>High-Quality Results</h3>
-                            <div class="box">
-                                <div class="icon-box"><i class="flaticon-medal"></i></div>
-                                <p>This mistakens idea denouncings and was born complete system.</p>
+                <div class="col-lg-6 col-md-6 col-sm-12 video-column">
+                    <div id="video_block_01">
+                        <div class="video-inner wow slideInRight" data-wow-delay="00ms" data-wow-duration="1500ms" style="background-image: url(assets/images/background/video-2.jpg);">
+                            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-14.png);"></div>
+                            <div class="video-btn">
+                                <div class="btn-bg rotate-me" style="background-image: url(assets/images/icons/icon-bg-5.png);"></div>
+                                <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="fas fa-play"></i></a>
                             </div>
                         </div>
                     </div>
@@ -89,7 +56,6 @@
             </div>
         </div>
     </section>
-    <!-- chooseus-style-three end -->
-
+    <!-- chooseus-section end -->
 
     {% endblock %}

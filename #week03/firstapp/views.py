@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import About
 # Create your views here.
 
 def index(request):
@@ -9,6 +10,10 @@ def blog(request):
 
 
 def about(request):
+    # about = About.objects.all()
+    # context = {
+    #     'about' :about
+    # }
     return render(request, "about.html")
 
 def technology(request):
@@ -17,12 +22,16 @@ def technology(request):
 def case(request):
     return render(request, "case.html")
 
+def team(request):
+    return render(request, "team.html")
 
 
 def counter(request):
     return render(request, "counter.html")
 
 
+def skills(request):
+    return render(request, "skills.html")
 
 def news(request):
     return render(request, "news.html")
@@ -36,8 +45,6 @@ def work(request):
 
 
 
-def skills(request):
-    return render(request, "skills.html")
 
 
 def team(request):

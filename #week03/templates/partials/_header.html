@@ -66,7 +66,7 @@
         <div class="close-btn"><i class="fas fa-times"></i></div>
         
         <nav class="menu-box">
-            <div class="nav-logo"><a href="index.html"><img src="{% static 'assets/images/logo.png' %}" alt="" title=""></a></div>
+            <div class="nav-logo"><a href="{% url 'index' %}"><img src="{% static 'assets/images/logo.png' %}" alt="" title=""></a></div>
             <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             <div class="contact-info">
                 <h4>Contact Info</h4>
@@ -88,21 +88,7 @@
         </nav>
     </div><!-- End Mobile Menu -->
 
-    <!--Page Title-->
-    <section class="page-title text-center style-two">
-        <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-62.png);"></div>
-        <div class="auto-container">
-            <div class="content-box">
-                <h1>Elements</h1>
-                <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">Home</a></li>
-                    <li><span>\\</span></li>
-                    <li>News 03</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!--End Page Title-->
+ 
     <!-- main header -->
     <header class="main-header style-three">
         <div class="header-upper">
@@ -123,7 +109,7 @@
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
 
-                                    <li class="current ">
+                                    <li class="index ">
                                         <a href="{% url 'index' %}">Home</a>
                                     </li>
 
@@ -149,38 +135,17 @@
                                         <a href="{% url 'case' %}">Case</a>
                                     </li>
                          
-                                    <li class="blog">
-                                        <a href="{% url 'work' %}">Work</a>
-                                    </li>
-
-
-                                    <li class="news">
-                                        <a href="{% url 'news' %}">News</a>
-                                    </li>
-
-                                 
+                                   
+     
                                     <li class="blog">
                                         <a href="{% url 'blog' %}">Blog</a>
                                     </li>
 
 
-                                    <li class="counter">
-                                        <a href="{% url 'counter' %}">Counter</a>
+
+                                    <li class="news">
+                                        <a href="{% url 'news' %}">News</a>
                                     </li>
-
-                          
-
-
-                                    <li class="skills">
-                                        <a href="{% url 'skills' %}">Skills</a>
-                                    </li>
-
-
-
-                                    <li class="contact">
-                                        <a href="{% url 'contact' %}">Contact</a>
-                                    </li>
-
                                 </ul>
                             </div>
                         </nav>

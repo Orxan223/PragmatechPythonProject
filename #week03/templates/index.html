@@ -7,6 +7,20 @@
 
 
 
+   <!--Page Title-->
+   <section class="page-title text-center style-two">
+    <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-62.png);"></div>
+    <div class="auto-container">
+        <div class="content-box">
+            <ul class="bread-crumb clearfix">
+                <li><a href="index.html"><h1>Home</h1></a></li>
+               
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End Page Title-->
+
     <!-- technology-section -->
     <section class="technology-section">
         <div class="auto-container">
@@ -22,7 +36,7 @@
                             <div class="inner-box">
                                 <div class="pattern-layer rotate-me" style="background-image: url(assets/images/shape/shape-19.png);"></div>
                                 <div class="icon-box"><i class="flaticon-vr"></i></div>
-                                <h4><a href="index-3.html">Video Intelligence</a></h4>
+                                <h4><a href="technology.html">Video Intelligence</a></h4>
                                 <p>Simple easy distinguish  when our power right.</p>
                             </div>
                         </div>
@@ -32,7 +46,7 @@
                             <div class="inner-box">
                                 <div class="pattern-layer rotate-me" style="background-image: url(assets/images/shape/shape-19.png);"></div>
                                 <div class="icon-box"><i class="flaticon-vision"></i></div>
-                                <h4><a href="index-3.html">Computer Vision</a></h4>
+                                <h4><a href="technology.html">Computer Vision</a></h4>
                                 <p>Claims duty the obligations of busines it will occur.</p>
                             </div>
                         </div>
@@ -42,7 +56,7 @@
                             <div class="inner-box">
                                 <div class="pattern-layer rotate-me" style="background-image: url(assets/images/shape/shape-19.png);"></div>
                                 <div class="icon-box"><i class="flaticon-conversation"></i></div>
-                                <h4><a href="index-3.html">Speech Recognition</a></h4>
+                                <h4><a href="technology.html">Speech Recognition</a></h4>
                                 <p>Therefore always hold these matters this principle.</p>
                             </div>
                         </div>
@@ -52,11 +66,15 @@
                             <div class="inner-box">
                                 <div class="pattern-layer rotate-me" style="background-image: url(assets/images/shape/shape-19.png);"></div>
                                 <div class="icon-box"><i class="flaticon-photograph"></i></div>
-                                <h4><a href="index-3.html">Technology Stack</a></h4>
+                                <h4><a href="technology.html">Technology Stack</a></h4>
                                 <p>Trouble that bound ensure all equaly blame belongs.</p>
                             </div>
                         </div>
+                        <div class="btn-box pull-right mt-60">
+                            <a href="{% url 'technology' %}" class="btn-style-eight">Technology Pages</a>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -81,17 +99,20 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                     <div id="content_block_05">
                         <div class="content-box">
+                        <!-- {% for x in about %} -->
                             <div class="sec-title text-left">
                                 <p>About Company</p>
-                                <h2>Mission is to bring the power of AI to every business</h2>
+                                <!-- <h4>{{x.title}}</h4> -->
                                 <div class="decor" style="background-image: url(assets/images/icons/decor-1.png);"></div>
                             </div>
                             <div class="text">
-                                <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it who do not know how to pursue pleasure rationally encounter.</p>
-                                <p>Which of us ever undertakes laborious physical exercise, except to obtain advantage from it who do not know how to pursue pleasure.</p>
+                                <!-- <p>{{x.text}}</p>
+                                <p>{{x.text}}</p> -->
                             </div>
-                            <div class="btn-box"><a href="index.html" class="theme-btn style-six">Read More</a></div>
+                            <div class="btn-box"><a href="{% url 'about' %}" class="theme-btn style-six">Read More</a></div>
+                        <!-- {%endfor%} -->
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -180,7 +201,7 @@
                                     <li class="social-links">
                                         <a href="index-3.html" class="share"><i class="flaticon-share-1"></i></a>
                                         <ul class="list clearfix">
-                                            <li><a href="index-3.html"><i class="fab fa-skype"></i></a></li>
+                                            <li><a href="{index-3.html}"><i class="fab fa-skype"></i></a></li>
                                             <li><a href="index-3.html"><i class="fab fa-twitter"></i></a></li>
                                             <li><a href="index-3.html"><i class="fab fa-facebook-f"></i></a></li>
                                         </ul>
@@ -227,7 +248,7 @@
                     <div class="team-block-one wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                         <div class="inner-box">
                             <div class="image-box">
-                                <img src="{% static 'assets/images/team/team-3.jpg' %} alt="">
+                                <img src="{% static 'assets/images/team/team-3.jpg' %}" alt="">
                                 <ul class="contact-box clearfix">
                                     <li class="email">
                                         <a href="mailto:carlene@naxly.com">
@@ -282,7 +303,7 @@
                     </div>
                 </div>
             </div>
-            <div class="more-btn"><a href="index-3.html" class="btn-style-eight">All Members</a></div>
+            <div class="more-btn"><a href="{% url 'team' %}" class="btn-style-eight">All Members</a></div>
         </div>
     </section>
     <!-- team-section end -->
@@ -318,7 +339,7 @@
                                 <div class="text">
                                     <p>Equal blame belongs too those who fail in their through weakness.</p>
                                 </div>
-                                <div class="link"><a href="index-3.html"><i class="flaticon-next"></i>Read More</a></div>
+                                <div class="link"><a href="{% url 'case' %}"><i class="flaticon-next"></i>Read More</a></div>
                             </div>
                         </div>
                     </div>
@@ -344,7 +365,7 @@
                                 <div class="text">
                                     <p>To take trivial example, which of us ever undertakes laborios physical.</p>
                                 </div>
-                                <div class="link"><a href="index-3.html"><i class="flaticon-next"></i>Read More</a></div>
+                                <div class="link"><a href="{% url 'case' %}"><i class="flaticon-next"></i>Read More</a></div>
                             </div>
                         </div>
                     </div>
@@ -370,7 +391,7 @@
                                 <div class="text">
                                     <p>Know pursue works rationally encounter consequences again desires.</p>
                                 </div>
-                                <div class="link"><a href="index-3.html"><i class="flaticon-next"></i>Read More</a></div>
+                                <div class="link"><a href="{% url 'case' %}"><i class="flaticon-next"></i>Read More</a></div>
                             </div>
                         </div>
                     </div>
@@ -399,7 +420,7 @@
                                 <div class="bg-pattern" style="background-image: url(assets/images/icons/icon-bg-1.png);"></div>
                                 <div class="overlay-pattern" style="background-image: url(assets/images/icons/icon-bg-2.png);"></div>
                             </div>
-                            <h4><a href="index.html">Frame the Problem</a></h4>
+                            <h4><a href="{% url 'index' %}">Frame the Problem</a></h4>
                             <p>To take a trivial example, which idea of ever undertakes.</p>
                         </div>
                     </div>
@@ -413,7 +434,7 @@
                                 <div class="bg-pattern" style="background-image: url(assets/images/icons/icon-bg-1.png);"></div>
                                 <div class="overlay-pattern" style="background-image: url(assets/images/icons/icon-bg-2.png);"></div>
                             </div>
-                            <h4><a href="index.html">Collect the Data</a></h4>
+                            <h4><a href="{% url 'index' %}">Collect the Data</a></h4>
                             <p>Best every pleasure is too welcomed every pain avoided.</p>
                         </div>
                     </div>
@@ -427,7 +448,7 @@
                                 <div class="bg-pattern" style="background-image: url(assets/images/icons/icon-bg-1.png);"></div>
                                 <div class="overlay-pattern" style="background-image: url(assets/images/icons/icon-bg-2.png);"></div>
                             </div>
-                            <h4><a href="index.html">Process the Data</a></h4>
+                            <h4><a href="{% url 'index' %}">Process the Data</a></h4>
                             <p>Have to be repudiated annoyances accepted the wise.</p>
                         </div>
                     </div>
@@ -439,6 +460,153 @@
 
 
 
+
+ <!--Page Title-->
+ <section class="page-title text-center style-two">
+    <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-62.png);"></div>
+    <div class="auto-container">
+        <div class="content-box">
+            <ul class="bread-crumb clearfix">
+                <li><a href="index.html"><h1>Blog</h1></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End Page Title-->
+<!-- blog-classic-grid -->
+<section class="blog-classic-grid">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <figure class="image-box">
+                            <img src="{% static 'assets/images/news/news-6.jpg' %}" alt="">
+                            <a href="{% static 'assets/images/news/news-6.jpg' %}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                        </figure>
+                        <div class="lower-content">
+                            <div class="file-box"><i class="far fa-folder-open"></i><p>Data Engineering</p></div>
+                            <div class="title-box">
+                                <div class="post-date"><p>02</p><span>Jan</span></div>
+                                <h4><a href="blog-details.html">Naxly Named as a Global Leader in Big Data</a></h4>
+                            </div>
+                            <div class="link"><a href="{% url 'blog' %}" class="btn-style-four">Read More<span>+</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <figure class="image-box">
+                            <img src="{% static 'assets/images/news/news-2.jpg' %}" alt="">
+                            <a href="{% static 'assets/images/news/news-2.jpg' %}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                        </figure>
+                        <div class="lower-content">
+                            <div class="file-box"><i class="far fa-folder-open"></i><p>ML Consulting</p></div>
+                            <div class="title-box">
+                                <div class="post-date"><p>01</p><span>Jan</span></div>
+                                <h4><a href="blog-details.html">The Current State of Artificial Intelligence Infographic.</a></h4>
+                            </div>
+                            <div class="link"><a href="{% url 'blog' %}" class="btn-style-four">Read More<span>+</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <figure class="image-box">
+                            <img src="{% static 'assets/images/news/news-1.jpg' %}" alt="">
+                            <a href="{% static 'assets/images/news/news-1.jpg' %}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                        </figure>
+                        <div class="lower-content">
+                            <div class="file-box"><i class="far fa-folder-open"></i><p>Data Strategy</p></div>
+                            <div class="title-box">
+                                <div class="post-date"><p>31</p><span>Dec</span></div>
+                                <h4><a href="blog-details.html">Naxly as the Winners in Global Agency Awards</a></h4>
+                            </div>
+                            <div class="link"><a href="{% url 'blog' %}" class="btn-style-four">Read More<span>+</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        <div class="pagination-wrapper text-center">
+            <ul class="pagination clearfix">
+                <li><a href="project-2.html"><i class="fas fa-angle-double-left"></i>&nbsp;&nbsp;Prev</a></li>
+                <li><a href="project-2.html" class="active">1</a></li>
+                <li><a href="project-2.html">2</a></li>
+                <li><a href="project-2.html">3</a></li>
+                <li><a href="project-2.html">Next&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- blog-classic-grid end -->
+
+
+
+
+
+
+    <!-- skills-section -->
+    <section class="skills-section">
+        <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-4.png);"></div>
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="col-lg-6 col-md-6 col-sm-12 image-column">
+                    <div class="image-box wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <figure class="image js-tilt"><img src="{% static 'assets/images/resource/illastration-1.png' %}" alt=""></figure>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 content-column">
+                    <div id="content_block_02">
+                        <div class="content-box">
+                            <div class="sec-title text-left">
+                                <p>Skills & Facts</p>
+                                <h2>We keep our self updated with latest trends</h2>
+                                <div class="decor" style="background-image: url(assets/images/icons/decor-1.png);"></div>
+                            </div>
+                            <div class="text">
+                                <p>As a solution providing company we offer a  range consulting, development quality testing services with 100% satisfaction.</p>
+                            </div>
+                            <div class="inner-box">
+                                <div class="progress-box">
+                                    <h5>Data Consulting</h5>
+                                    <div class="icon-box"><i class="flaticon-chat"></i></div>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="62%"><div class="count-text">62%</div></div>
+                                    </div>
+                                </div>
+                                <div class="progress-box">
+                                    <h5>Big Data & BI</h5>
+                                    <div class="icon-box"><i class="flaticon-cloud-computing"></i></div>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="89%"><div class="count-text">89%</div></div>
+                                    </div>
+                                </div>
+                                <div class="progress-box">
+                                    <h5>Predictive Analysis</h5>
+                                    <div class="icon-box"><i class="flaticon-analysis-1"></i></div>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="75%"><div class="count-text">75%</div></div>
+                                    </div>
+                                </div>
+                                <div class="btn-box pull-right mt-60">
+                                    <a href="{% url 'index' %}" class="btn-style-eight">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills-section end -->
+
+ 
     <!-- news-section -->
     <section class="news-section style-two style-three">
         <div class="auto-container">
@@ -448,9 +616,7 @@
                     <h2>Company news & updates</h2>
                     <div class="decor" style="background-image: url(assets/images/icons/decor-1.png);"></div>
                 </div>
-                <div class="btn-box pull-right mt-60">
-                    <a href="blog-1.html" class="btn-style-eight">Read More</a>
-                </div>
+               
             </div>
             <div class="row clearfix">
                 <div class="col-lg-4 col-md-6 col-sm-12 news-block">
@@ -469,7 +635,7 @@
                                 <div class="text">
                                     <p>Equal blame belongs too those who fail in their through weakness will shrinking.</p>
                                 </div>
-                                <div class="link"><a href="blog-details.html"><i class="flaticon-next"></i>Read More</a></div>
+                                <div class="link"><a href="{% url 'news' %}"><i class="flaticon-next"></i>Read More</a></div>
                             </div>
                         </div>
                     </div>
@@ -490,7 +656,7 @@
                                 <div class="text">
                                     <p>When our power choice untrammelled and then prevents our being able pleasure.</p>
                                 </div>
-                                <div class="link"><a href="blog-details.html"><i class="flaticon-next"></i>Read More</a></div>
+                                <div class="link"><a href="{% url 'news' %}"><i class="flaticon-next"></i>Read More</a></div>
                             </div>
                         </div>
                     </div>
@@ -511,7 +677,7 @@
                                 <div class="text">
                                     <p>Obligations of business it will frequently occur that pleasures have to be repudiated.</p>
                                 </div>
-                                <div class="link"><a href="blog-details.html"><i class="flaticon-next"></i>Read More</a></div>
+                                <div class="link"><a href="{% url 'news' %}"><i class="flaticon-next"></i>Read More</a></div>
                             </div>
                         </div>
                     </div>
@@ -521,72 +687,113 @@
     </section>
     <!-- news-section end -->
 
-    <!-- service-style-four -->
-    <section class="service-style-four">
-        <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-41.png);"></div>
-     
+    <hr>
+    
+    <!-- funfact-style-two -->
+   
+    <section class="funfact-style-two">
+        
         <div class="auto-container">
-            <div class="sec-title text-center mb-30">
-                <p>Our Services</p>
-                <h2>Target your customers with the<br />right messages</h2>
-                <div class="decor" style="background-image: url(assets/images/icons/decor-1.png);"></div>
-            </div>
-            <div class="inner-content">
-                <div class="service-carousel-2 owl-carousel owl-theme owl-dots-none">
-                    <div class="service-block-four">
+            <h1>Counter</h1>
+            <div class="row clearfix">
+                
+                <div class="col-lg-3 col-md-6 col-sm-12 counter-block "> 
+                    <div class="counter-block-two wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                       
                         <div class="inner-box">
-                            <div class="icon-box">
-                                <div class="icon icon-1 float-bob-y"></div>
-                                <div class="icon icon-2"></div>
-                                <div class="icon icon-3 float-bob-y"></div>
+                            
+                            <div class="count-outer count-box">
+                                
+                                <span class="count-text" data-speed="1500" data-stop="3.5">0</span>k
+                                
                             </div>
-                            <div class="pattern-box">
-                                <div class="bg-pattern" style="background-image: url(assets/images/shape/shape-39.png);"></div>
-                                <div class="overlay-pattern" style="background-image: url(assets/images/shape/shape-40.png);"></div>
-                            </div>
-                            <figure class="image-box"><img src="{% static 'assets/images/service/service-4.png' %}" alt=""></figure>
-                            <h3><a href="service-details.html">Website Analysis</a></h3>
-                            <p>Simple easy distinguish in a free hour when our power choice.</p>
-                            <div class="link"><a href="service-details.html"><i class="flaticon-next"></i>Read More</a></div>
-                        </div>
-                    </div>
-                    <div class="service-block-four">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                                <div class="icon icon-1 float-bob-y"></div>
-                                <div class="icon icon-2"></div>
-                                <div class="icon icon-3 float-bob-y"></div>
-                            </div>
-                            <div class="pattern-box">
-                                <div class="bg-pattern" style="background-image: url(assets/images/shape/shape-39.png);"></div>
-                                <div class="overlay-pattern" style="background-image: url(assets/images/shape/shape-40.png);"></div>
-                            </div>
-                            <figure class="image-box"><img src="{% static 'assets/images/service/service-5.png' %}" alt=""></figure>
-                            <h3><a href="service-details.html">User Driven Analysis</a></h3>
-                            <p>Therefore always hold these matters principle reject pleasures.</p>
-                            <div class="link"><a href="service-details.html"><i class="flaticon-next"></i>Read More</a></div>
-                        </div>
-                    </div>
-                    <div class="service-block-four">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                                <div class="icon icon-1 float-bob-y"></div>
-                                <div class="icon icon-2"></div>
-                                <div class="icon icon-3 float-bob-y"></div>
-                            </div>
-                            <div class="pattern-box">
-                                <div class="bg-pattern" style="background-image: url(assets/images/shape/shape-39.png);"></div>
-                                <div class="overlay-pattern" style="background-image: url(assets/images/shape/shape-40.png);"></div>
-                            </div>
-                            <figure class="image-box"><img src="{% static 'assets/images/service/service-6.png' %}" alt=""></figure>
-                            <h3><a href="service-details.html">Analysis Checklists</a></h3>
-                            <p>Trouble the bound ensue equaly blame belongs to those weakness.</p>
-                            <div class="link"><a href="service-details.html"><i class="flaticon-next"></i>Read More</a></div>
+                            <h4>Projects Completed</h4>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 counter-block">
+                    <div class="counter-block-two wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="count-outer count-box">
+                                <span class="count-text" data-speed="1500" data-stop="2.8">0</span>k
+                            </div>
+                            <h4>Industrires Served</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 counter-block">
+                    <div class="counter-block-two wow slideInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="count-outer count-box">
+                                <span class="count-text" data-speed="1500" data-stop="139">0</span>
+                            </div>
+                            <h4>Expert Team Mates</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 counter-block">
+                    <div class="counter-block-two wow slideInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="count-outer count-box">
+                                <span class="count-text" data-speed="1500" data-stop="14">0</span>m
+                            </div>
+                            <h4>Happy Customers</h4>
+                        </div>
+                    
+                    </div>
+                </div>
+            
             </div>
         </div>
     </section>
-    <!-- service-style-four end -->
+    <!-- funfact-style-two end -->
+    <hr>
+    <!-- contact-section -->
+    <section class="contact-section">
+       
+
+        <div class="auto-container">
+            <h1>Contact</h1>
+            <div class="row clearfix">
+               
+                <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+                    <div id="content_block_09">
+                        <div class="content-box">
+                            <form method="post" action="assets/inc/sendemail.php" id="contact-form" class="default-form"> 
+                                <div class="form-group">
+                                    <label><i class="far fa-user"></i>Your Name</label>
+                                    <input type="text" name="username" placeholder="Enter name here" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label><i class="far fa-envelope"></i>Email Address</label>
+                                    <input type="email" name="email" placeholder="Email Address" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label><i class="far fa-user"></i>Subject</label>
+                                    <input type="text" name="subject" placeholder="Subject" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label><i class="fas fa-text-height"></i>Message</label>
+                                    <textarea name="message" placeholder="Message goes here"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button class="theme-btn style-nine" type="submit" name="submit-form">Send Your Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                    <div class="image-box wow slideInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <figure class="image js-tilt"><img src="assets/images/resource/illastration-6.png" alt=""></figure>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- contact-section end -->
+    <hr>
+
     {% endblock %}

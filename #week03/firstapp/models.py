@@ -5,7 +5,7 @@ from django.db import models
 class About(models.Model):
     title = models.CharField(blank=True,null=True,max_length=150)
     text =models.TextField(blank=True,null=True)
-    image = models.ImageField('Image',upload_to = 'about_image')
+    image = models.ImageField('Sekil', upload_to='about_image')
 
 
 

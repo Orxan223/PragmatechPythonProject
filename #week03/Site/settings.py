@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'firstapp'
+    'firstapp',
+    'jet_django',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,10 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+STATIC_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+JET_PROJECT = '{{your_project_name}}'
+JET_TOKEN = '{{your_jet_token}}'

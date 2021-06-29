@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Technology , About , Team , Choose , Case , Work , Blog , News
+from .models import Technology , About , Team , Choose , Case , Work , Blog , Category , News
 # Register your models here.
 
 
@@ -61,6 +61,11 @@ class BlogAdmin(admin.ModelAdmin):
 
 admin.site.register(Blog,BlogAdmin)
 
+
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('icon',)
+
+admin.site.register(Category,CategoryAdmin)
 
 
 # ---------------------------------------      News     ---------------------------------- 

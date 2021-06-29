@@ -85,6 +85,7 @@ class Work(models.Model):
 class Blog(models.Model):
     title = models.CharField(blank=True,null=True,max_length=150)
     image = models.ImageField('Sekil', upload_to='Blog_image')
+    category = models.ForeignKey('Category', on_delete=models.CASCADE)
     # icon = IconForeignKeyField(blank=True,null=True)
     # date = models.DateField()
 
@@ -93,6 +94,12 @@ class Blog(models.Model):
         return self.title
 
 
+class Category(models.Model):
+    name = models.CharField(blank=True,null=True,max_length=150)
+    icon = IconForeignKeyField(blank=True,null=True)
+
+    def __str__(self):
+        return self.name
 
 
 # ---------------------------------------      News     ---------------------------------- 

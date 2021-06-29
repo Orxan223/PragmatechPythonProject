@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'firstapp',
     'jet_django',
+    'font_icons',
 ]
 
 MIDDLEWARE = [

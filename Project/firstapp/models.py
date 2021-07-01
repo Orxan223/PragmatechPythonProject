@@ -112,3 +112,34 @@ class News(models.Model):
 
     def __str__(self):
         return self.title
+
+
+    class Meta:
+        verbose_name_plural = "news"
+
+
+
+
+
+
+
+
+# ---------------------------------------      Contact     ---------------------------------- 
+class Contact(models.Model):
+    full_name = models.CharField(blank=True,null=True,max_length=150)
+    email = models.EmailField(blank=True,null=True,max_length=150)
+    subjec = models.CharField(blank=True,null=True,max_length=150)
+    message = models.TextField(blank=True,null=True,help_text='Send your message', max_length=150)
+
+
+    def __str__(self):
+        return self.full_name
+
+    # moderetion
+    created_at = models.Datefield(auto_now_add=True)
+    updated_at = models.Datefield(auto_now=True)
+
+
+    class Meta:
+        verbose_name_plural = "Contacts"
+        ordering = ('-created_at')

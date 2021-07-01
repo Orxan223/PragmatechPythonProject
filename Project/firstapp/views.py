@@ -42,16 +42,7 @@ def work(request):
     return render(request, "work.html")
 
 
-# -------
-def work(request):
-    return render(request, "work.html")def work(request):
-    return render(request, "work.html")def work(request):
-    return render(request, "work.html")def work(request):
-    return render(request, "work.html")def work(request):
-    return render(request, "work.html")def work(request):
-    return render(request, "work.html")def work(request):
-    return render(request, "work.html")def work(request):
-    return render(request, "work.html")
+
 
 
 

@@ -112,16 +112,3 @@ abt = About.objects.all()
 22.
 About.objects.get(id__exact=1) 
 >>>  <About: Basliq1>
-dwqffffffffffffffffffffffffff
-fdwdwefwf22efqq
-fdwdwefwf22efqqfq
-QuerySetfq
-QuerySetfqfq
-fdwdwefwf22efqqfwq
-
-wqf
-wqf
-qfw
-wqf
-qfwwqf
-qfwfqwqw

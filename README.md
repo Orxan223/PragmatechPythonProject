@@ -8,7 +8,7 @@
 - Layihənin başlama tarixi : 21.06.2021
 - Layihənin bitirilmə müddəti : 21.08.2021
 
-### Meqaleler
+# Meqaleler
 - [Programlama Paradigmaları](https://or-xan-2018.medium.com/programlama-paradigmalar%C4%B1-9f9b90eb3f25)
 
 

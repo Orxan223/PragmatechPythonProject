@@ -168,7 +168,7 @@ class Blog(models.Model):
 class Category(models.Model):
     # information
     name = models.CharField(blank=True, null=True, max_length=150)
-    icon = IconForeignKeyField(blank=True, null=True)
+    image = models.ImageField('Sekil', upload_to='Category_image')
 
     def __str__(self):
         return self.name

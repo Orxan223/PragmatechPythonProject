@@ -63,7 +63,7 @@ admin.site.register(Blog,BlogAdmin)
 
 
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('icon',)
+    list_display = ('name',)
 
 admin.site.register(Category,CategoryAdmin)
 

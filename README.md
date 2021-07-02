@@ -12,7 +12,7 @@
 - [Programlama Paradigmaları](https://or-xan-2018.medium.com/programlama-paradigmalar%C4%B1-9f9b90eb3f25)
 
 
-
+# Tasks
 ### Week04 Day01
 Model - Technology, About, Choose , Team , Case , Work , Blog , News
 

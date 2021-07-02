@@ -5,7 +5,7 @@
 - Layihənin adı : 
 - Layihənin reposu : https://github.com/Orxan223/PragmatechPythonProject
 - Layihədə istifadə olunan texnologiyalar : Python,  CSS ,Javascript , HTML
-- - Layihənin başlama tarixi : 21.06.2021
+- Layihənin başlama tarixi : 21.06.2021
 - Layihənin bitirilmə müddəti : 21.08.2021
 
 ### Meqaleler

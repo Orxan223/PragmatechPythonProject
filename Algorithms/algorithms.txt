@@ -1,0 +1,785 @@
+# Task01.day
+import random
+import math
+
+
+# 1)
+from typing import Counter
+
+
+x = 'Salam'
+print(x)
+
+# 2)
+a = "orxan"
+b = "salmanov"
+
+d = a.capitalize()
+c = b.capitalize()
+
+print (d + ' ' + c)
+
+# 3)
+print('Yevlax','Kurdemir','Berde', 'Terter', sep='*')
+
+# 4)
+a = ' Macaristan'[::-1]
+print(a)
+
+# 5)
+print('Languages : Python C JavaScript')
+
+# 6)
+print(' “Forever for now” is one of the')
+print(" “Forever for now” \n is one of the")
+print(" “Forever for now” \t is one of the")
+print(" “Forever for now” \bis one of the")
+
+# 7)
+a = ( "O, ümumi PFA və FWA mükafatını alan ilk futbolçu oldu. 2008,2013,2014,2016-cü illərdə Qızıl top mükafatını qazandı")
+print(len(a)) 
+
+a = "O, ümumi PFA və FWA mükafatını alan ilk futbolçu oldu. 2008,2013,2014,2016-cü illərdə Qızıl top mükafatını qazandı"
+print(a[:57])
+a = "O, ümumi PFA və FWA mükafatını alan ilk futbolçu oldu. 2008,2013,2014,2016-cü illərdə Qızıl top mükafatını qazandı"
+print(a[:len(a)//2])
+
+
+# 8)
+a = 3
+b = 4
+print (f" {a} ustu 4 = {a**4}, {b} ustu 3 ise {b**3}")
+
+# 9)
+x = 10
+y = 55
+print(x > y and x < y )
+
+# 10)
+a ='Nineteet Eighty-Four does not present "art-as-culture" but "art-as-function". Orwell like Marcel Proust fears that the habit of conforming to the force benumbs sensations and erases the perception of the world. Technological totalitarianism alienates senses, controls human behaviour and leads to linguistic degradation'
+word = 'does '
+
+if word in a:
+    print(f"{word } metnde var")
+else:
+    print('Not found')
+
+# 11)
+x = 8
+if x > 10 and x%2 == 0 :
+    print("OKAY")
+elif (x < 10 and x%2 == 0 ):
+    print("NOT OKAY")
+else:
+    print("BAD")
+
+# 12)
+print((65 % 22) * (65 / 22)) 
+
+# 13)
+
+a=10
+b=8
+if (a-b) > (a // b):
+    print("Greater")
+elif (a-b) == (a // b):
+    print("EQUAL")
+else:
+    print("SMALLER")
+
+
+
+
+
+# 14)
+a = round(5.567, 1)
+print(a)
+
+# 15)
+
+
+# 16)
+c = random.randrange(1,8)
+print (math.sqrt(c))
+
+# 17)
+a = random.uniform(0, 1)
+b = random.uniform(1, 10)
+print(a * b)
+
+
+# 18)
+z = "5.89"
+v = z.strip(".89")
+print(v)
+a = int(v)
+print(a**3)
+
+# 19)
+g = '4.92',
+y = int(4.92)
+print(type(y))
+
+
+# 20)
+
+a = int( input("Eded daxil edin :"))
+b = int( input("Eded daxil edin :"))
+c = int( input("Eded daxil edin :"))
+d = int( input("Eded daxil edin :"))
+
+if a == b == c == d:
+    print(a ** 2) 
+else:
+    print((a+b+c+d))
+
+
+
+# 21)
+num = int(input("Ne qeder eded daxil edilsin :"))
+list = []
+
+for x in range(num):
+    eded = int(input("Eded daxil edin: "))
+    list.append(eded)
+
+print("Boyuk eded:" , max(list))
+print("Kicik eded: ", min(list))
+
+
+
+
+
+
+# 22)
+meyveler = {'alma' , 'armud' , 'banan'}
+a = input("meyve adi daxil edin :")
+if a in meyveler:
+    print(a)
+else:
+    print('error')
+
+
+
+
+
+
+# 23)
+a = [55, 42, 33, 27, 76,95]
+cem = 0
+for x in a:
+    cem += x
+print(cem)
+
+# 24)
+list = [55, 99, 33, 27, 77]
+i = list[0]
+for x in list:
+    if x > i:
+        i = x
+
+print('En boyuk eded :', i)
+
+# 25)
+list = [55 , 42 , 13 , 27 , 1]
+i = list[0]
+for x in list:
+    if x < i:
+        i = x
+
+print('En kicik eded :', i)
+
+# 26)
+list =  ['abc', 'xyz', 'aba', '1221','4554']
+a = 0
+for x in list:
+    if len(x) > 2 and  x[0] == x[-1]: 
+        a += 1
+
+print(a)
+
+
+# 27)
+l = []
+if not l:
+    print("List is empty")
+
+
+# 28)
+list = [55, 42, 33, 27, 78]
+i = []
+for x in list:
+    if x % 2 == 1:
+        i.append(x)
+print(i)
+
+
+# ----------------------------SUAL----------------------------------------------------------------------------
+
+# 1)Write a Python function to sum all the numbers in a list.
+
+
+array = [8, 2, 3, 0, 7]
+def a(x):
+    Sum = 0
+    for i in x:
+        Sum += i
+    print(Sum)
+a(array)
+
+
+
+# 2)Write a Python function to multiply all the numbers in a list. 
+
+array = [8, 2, 3, -1, 7]
+def a(x):
+    total = 1
+    for i in x:
+        total *= i
+    print(total)
+
+print(a(array))
+
+
+
+# 3)Write a function called returnDay. This function takes in one parameter ( a number from 1-7) and returns the day of the week ( 1 is Sunday, 2 is Monday etc.).
+#  If the number is less than 1 or greater than 7, the function should return None.
+returnDay = {
+1: 'Monday',
+2: 'Tuesday',
+3: 'Wednesday',
+4: 'Thursday',
+5: 'Friday',
+6: 'Saturday',
+7: 'Sunday',
+
+}
+ 
+def day(number):
+    try:
+        return returnDay[number]
+    except:
+        return "error"
+
+print(day(5))
+
+
+# 4)
+def LastElement(list):
+    for i in list:
+        if i == list[-1]:      
+            return i
+        else:
+            if i == []:
+                return "none"
+    
+print(LastElement((1,2,3,4,5,7)))
+
+
+# 5)
+def even(list):
+    a = []
+    for i in list:
+        if i % 2 == 0:
+            a.append(i)
+    return a
+
+print(even((1,2,3,4,5,6,7,8,9,10)))
+
+
+
+veriable = 10                          # variable
+
+def function(b):                       # function  
+    return b ** 2
+
+class C:
+
+    c = 20                      # class attribute
+
+    def __init__(self, d):      # "dunder" method
+        self.d = d              # instance attribute
+
+    def show(self):             # method
+        print(self.c, self.d) 
+
+e = C(30)
+e.d = 40
+e.show()                        # another instance variable
+
+
+
+# 1) Bir dənə Restoran classı yaradın. 
+# Bu classa init() metdou bu classın adını (restaurant_name) və mətbəx növü (cuisine_type) adlı iki atribitunu saxlamalıdır. 
+# describe_restaurant() adlı bir metod yaradın hansı ki restoranın adını və mətbəxin növünü ekrana print etsin. 
+# Restoranın açıq olmasını mesaj verən open_restaurant() adlı başqa bit metdi yaradın.
+# Sonra restoran adlı obyekt yaradın bu class-dan və restotanın adını,
+# mətbəxinin növünü, restoran haqqında məlumatları və açıq olmasını çapa verin. 
+# Bu Restoran classından daha iki obyek yaradın və describe_restaurant metodunu yeni 
+# yaratdığınız hər iki obyekt üçün tətbiq edin.
+
+class Restoran:
+    def __init__(self, restaurant_name, cuisine_type):
+        self.x = restaurant_name
+        self.y = cuisine_type
+
+    def describe_restaurant(self):
+        print (self.x ,self.y)
+    
+
+    def open_restaurant(self):
+        print(f"{self.x}-aciqdir")
+
+a = Restoran("Qala Restorant","Dolma")
+b= Restoran("Anadolu", "Xengel")
+c=Restoran("Xan", "Pilov")
+a.describe_restaurant()
+b.describe_restaurant()
+c.describe_restaurant()
+
+a.open_restaurant()
+b.open_restaurant()
+c.open_restaurant()
+
+
+# 2)User adlı yeni class yaradın. first_name, last_name və age atributları verin bu class-a.
+# describe_user metdou yaradın user haqqında məlumatları çapa vermək üçün. 
+# greet_user adlı başqa bir metod yaradın hansı ki userin ad və soyadına salam verən bir mesaj ekrana yazdırsın. 
+# Bir neçə obyekt yaradın bu User class-ndan və hər birinin atribut və metodlarını istifadə edin.
+
+class User:
+    def __init__(self, first_name,last_name,age ):
+        self.x = first_name
+        self.y = last_name
+        self.c = age
+
+    
+    def describe_user(self):
+        print(self.x ,self.y,self.c)
+
+    def greet_user(self):
+        print(f"{self.x} {self.y} xos geldin")
+
+
+a = User("Orxan","Salmanov",55)
+a.describe_user()
+a.greet_user()
+
+b = User("Eli","Kerimov",55)
+b.describe_user()
+b.greet_user()
+
+c = User("Filankes","Filankesov",55)
+c.describe_user()
+c.greet_user()
+
+
+
+# 3)login_attempts adlı bir atribut verin User classına. 
+# increment_login_attempts adlı metod yaradın hansı ki hər dəfə işə düşəndə login_attempts 1 vahid artırır. 
+# reset_login_attempts adlı bir metod yaradın hansı ki login_attemptsləri sıfırlayır. 
+# Sonra bir user obyekti yaradın bu class-dan və increment_login_attemptsi bir neçə dəfə istifadə etdikdən sonra userin neçə dəfə cəhd etdiyini çapa verin. 
+# Daha sonra cəhdlərin sayını sıfırlayın və yenidən cəhdlərin sayını çapa verin.
+
+
+
+class User:
+    def __init__(self,login_attempts):
+        self.x = login_attempts
+
+
+    def increment_login_attempts(self):
+        return self.x + 1
+
+    def reset_login_attempts(self):
+        return 0
+   
+
+a = User(0)
+print(a.increment_login_attempts())
+
+b = User(1)
+print(b.increment_login_attempts())
+
+
+c = User(2)
+print(c.increment_login_attempts())
+print(c.reset_login_attempts())
+
+
+
+
+#-----------------------------------------------Polimorfizm-------------------------------------------- 
+
+class Animal:
+    def introduction(self):
+        print("there are many types animal")
+
+    def wild(self):
+        print("some animals wild but some not")
+
+
+class Cat(Animal):
+    def wild(self):
+        print("Cat is not wild")
+
+
+class Leon(Animal):
+    def wild(self):
+        print("Leon is wild")
+
+
+a = Animal()
+b = Cat()
+c = Leon()
+
+a.introduction()
+a.wild()
+
+b.introduction()
+b.wild()
+
+
+c.introduction()
+c.wild()
+
+
+# --------------------------------------------------------- SUPER()
+# Bir class ne vaxd ki, diger class-in ozeliklerine erismek isdiyende super() istifade edirik
+class Parent:
+    def __init__(self, a):
+        self.a = a
+
+    def printmessage(self):
+        print(self.a)
+
+
+class Child(Parent):
+    def __init__(self, a):
+        super().__init__(a)
+
+
+x = Child("Hello, and welcome!")
+
+x.printmessage()
+
+
+
+
+
+from datetime import date
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    #Class method to create a Person object by birth year.
+    @classmethod
+    def fromBirthYear(cls, name, year):
+        return cls(name, date.today().year - year)
+
+    @staticmethod
+    def isAdult(age):
+        return age > 18
+
+person1 = Person('orxan', 22)
+person2 = Person.fromBirthYear('mayank', 1997)
+
+print (person1.age)
+print (person2.age)
+
+# print the result
+print (Person.isAdult(22))
+
+# -----------------------------------------------------DUNDER METHOD--------------------------------------
+
+# 1)---------------       __add__()
+num = 10
+
+print(num.__add__(5))
+
+
+# 2)----------------     __str__()
+
+
+num = 12
+print(str(num))
+# yuxaridaki numune ile asagidaki eynidir
+print(int.__str__(num))
+
+
+# 3)----------------     __init__()
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+p1 = Person("Orxan", 53)
+
+print(p1.name)
+print(p1.age)
+
+
+# 4)----------------       __len__()
+
+nums = [1, 2, 3, 4, 5]
+print(len(nums))
+# yuxaridaki numune ile asagidaki eynidir
+print(nums.__len__())
+
+# 5)-------------------    __getattr__()
+
+
+class Dummy(object):
+    def __getattr__(self, attr):
+        return attr.upper()
+
+
+d = Dummy()
+print(d.does_not_exist)
+print(d.what_about_this_one)
+
+# 6)--------------------    __dict__()
+
+
+class Car:
+    def __init__(self, marka, color):
+        self.marka = marka
+        self.color = color
+
+
+cr = Car('BMW', 'Black')
+print(cr.__dict__)
+
+# 7)---------------------     __setattr__
+
+
+class School:
+    def __setattr__(self, name, value):
+        self.__dict__[name] = value.upper()
+
+
+f = School()
+f.student = "student"
+print(f.student)
+
+# 8)----------------------     __abs__
+v = -1
+v.__abs__()
+print(abs(v))
+
+# 9)----------------------     __dir__
+
+
+class Nese:
+    def __init__(self, x):
+        self.x = x
+
+
+print(dir(Nese))
+
+# 9)----------------------     __repr__
+
+
+class MyClass:
+    x = 0
+    y = ""
+
+    def __init__(self, anyNumber, anyString):
+        self.x = anyNumber
+        self.y = anyString
+    def __repr__ (self):
+        return 'MyClass(x=' + str(self.x) + ' , y=' + self.y + ')'
+
+
+myObject = MyClass(12345, "Hello")
+
+print(myObject.__str__())
+print(myObject)
+print(str(myObject))
+print(myObject.__repr__())
+
+
+
+#--------------------------      __repr__  ve __str__ arasindaki ferq:
+# __repr__ - teminalda
+# __str__ - terminalda, admin panelde ve s. hansi adnan gorsenmesini mueyyen edir(self.title,self.name...)
+
+
+
+
+#----------------------------------------------------Task-----------------------------------------------------
+
+print("enter your 5 result")
+ResultOne = int(input())
+ResultTwo = int(input())
+ResultThree = int(input())
+ResultFour = int(input())
+ResultFive = int(input())
+
+
+total = ResultOne + ResultTwo + ResultThree + ResultFour + ResultFive
+avarage = total/5
+
+
+if avarage >= 91 and avarage <= 100:
+    print("Total mark is 500")
+    print(f"Your total grade is:{total}")
+    print("Your Total Grade is A1")
+    print("Congratulations your English is in A grade")
+
+
+elif avarage >= 81 and avarage < 91:
+    print("total mark is 500")
+    print(f"Your total grade is:{total}")
+    print("Your Total Grade is A2")
+    print("Congratulations your English is in A grade")
+
+
+elif avarage >= 71 and avarage < 81:
+    print("total mark is 500")
+    print(f"Your total grade is:{total}")
+    print("Your Total Grade is B1")
+    print("Good your physics grade in B")
+
+
+elif avarage >= 61 and avarage < 71:
+    print("total mark is 500")
+    print(f"Your total grade is:{total}")
+    print("Your Total Grade is B2")
+    print("Good your physics grade in B")
+
+
+elif avarage >= 51 and avarage < 61:
+    print("total mark is 500")
+    print(f"Your total grade is:{total}")
+    print("Your Total  Grade is C1")
+    print("You are pass in C grade")
+
+
+elif avarage >= 41 and avarage < 51:
+    print("total mark is 500")
+    print(f"Your total grade is:{total}")
+    print("Your Total  Grade is C2")
+    print("You are pass in C grade")
+
+
+elif avarage >= 33 and avarage < 41:
+    print("total mark is 500")
+    print(f"Your total grade is:{total}")
+    print("Your Total Grade is D")
+
+
+elif avarage >= 21 and avarage < 33:
+    print("total mark is 500")
+    print(f"Your total grade is:{total}")
+    print("Your Total Grade is E1")
+
+
+elif avarage >= 0 and avarage < 21:
+    print("total mark is 500")
+    print(f"Your total grade is:{total}")
+    print("Your Total Grade is E2")
+
+
+else:
+    print("Invalid Input!")
+
+
+
+
+# -------------------------------------------SETTER   GETTER   DELETER------------------------------------------
+
+
+class year_graduated:
+    def __init__(self, year=32):
+        self.year = year
+
+    @property
+    def Aboutyear(self):
+        return self.year
+
+    @Aboutyear.setter
+    def Aboutyear(self, a):
+        self.year = a
+
+    @Aboutyear.deleter 
+    def Aboutyear(self):
+        print('Deleting name')
+        del self.year
+ 
+
+
+grad_obj = year_graduated()
+print(grad_obj.year)
+
+grad_obj.year = 2018
+print(grad_obj.year)
+
+del grad_obj.Aboutyear
+
+
+
+# --------------------------------------------WEEKEND TASK is completed--------------------------------------------
+import random
+
+name_1 = input('Birinci oyuncunun adi :')
+name_2 = input('Ikinci oyuncunun adi :')
+
+print(f"Hormetli {name_1} ve {name_2} ")
+print("Her birinizin 5 cehd etme shansiniz var.Her duzgun texmin size 1 xal qazandiracaq. Ugurlar!")
+
+name_1_total = 0
+name_2_total = 0
+xal = 1
+
+x = 1
+while (x < 6):
+    number = random.randint(1, 5)
+
+    while(True):
+        name_1_guess = int(input("Enter your guess : "))
+
+        if name_1_guess == number:
+            name_1_total += xal
+            print("------------------------------")
+            print(f"1 point was added to you {name_1} !")
+            print("------------------------------")
+
+        elif name_1_guess != number:
+            print(f"Sorry {name_1}, your guess is False")
+
+        break
+
+    while(True):
+        name_2_guess = int(input("Enter your guess : "))
+
+        if name_2_guess == number:
+            name_2_total += xal
+            print("------------------------------")
+            print(f"1 point was added to you {name_2} !")
+            print("------------------------------")
+
+        elif name_2_guess != number:
+            print(f"Sorry {name_2}, your guess is false")
+
+        break
+
+    x += 1
+
+
+if name_1_total > name_2_total:
+    print(f"{name_1}, you WIN!!!")
+    print(f"{name_1}, your total point is {name_1_total}")
+
+elif name_1_total < name_2_total:
+    print(f"{name_2}, you WIN!!!")
+    print(f"{name_2}, your total point is {name_2_total}")
+
+
+else:
+    print(f"{name_1} and {name_2} your point is equal")
+

@@ -225,7 +225,7 @@ class Contact(models.Model):
     # created_at = models.DateTimeField(auto_now_add=True)
     # updated_at = models.DateTimeField(auto_now=True)
     # published = models.BooleanField('Is published' , default=True)
-    # class Meta:
-    #     verbose_name = 'Contact'
-    #     verbose_name_plural = "Contacts"
+    class Meta:
+        verbose_name = 'Contact'
+        verbose_name_plural = "Contacts"
         # ordering = ('-created_at',)

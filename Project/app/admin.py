@@ -1,14 +1,8 @@
 from django.contrib import admin
-from .models import Technology , About , Team , Choose , Case , Work , Blog , Category , News , Contact
+from .models import About , Team , Choose , Case , Work , Blog , Category  , Contact
 # Register your models here.
 
 
-# ---------------------------------------      Technology     ---------------------------------- 
-
-class TechnologyAdmin(admin.ModelAdmin):
-    list_display = ('title',)
-
-admin.site.register(Technology,TechnologyAdmin)
 
 
 
@@ -25,13 +19,6 @@ class ChooseAdmin(admin.ModelAdmin):
     list_display = ('title',)
 admin.site.register(Choose,ChooseAdmin)
 
-
-# ---------------------------------------      Team     ---------------------------------- 
-
-class TeamAdmin(admin.ModelAdmin):
-    list_display = ('name',)
-
-admin.site.register(Team,TeamAdmin)
 
 
 # ---------------------------------------      Case     ---------------------------------- 
@@ -70,10 +57,6 @@ admin.site.register(Category,CategoryAdmin)
 
 # ---------------------------------------      News     ---------------------------------- 
 
-class NewsAdmin(admin.ModelAdmin):
-    list_display = ('title',)
-
-admin.site.register(News,NewsAdmin)
 
 
 

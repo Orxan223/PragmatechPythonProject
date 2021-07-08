@@ -2,26 +2,6 @@ from django.db import models
 from font_icons.models import IconForeignKeyField
 # from django.contrib.auth import get_user_model
 # User= get_user_model
-# ---------------------------------------      Technology     ----------------------------------
-class Technology(models.Model):
-    # Technology settles in this stock
-    icon = IconForeignKeyField(blank=True, null=True)
-    title = models.CharField(blank=True, null=True, max_length=127)
-    short_description = models.CharField(blank=True, null=True, max_length=127)
-
-    def __str__(self):
-        return self.title
-
-    # moderetion
-    # created_at = models.DateTimeField(auto_now_add=True)
-    # updated_at = models.DateTimeField(auto_now=True)
-
-
-
-    # class Meta:
-    #     verbose_name = 'Technology'
-    #     verbose_name_plural = 'Technologies'
-    #     ordering = ('-created_at',)
 
 # ---------------------------------------      About     ----------------------------------
     # About settles in this stock
@@ -54,9 +34,9 @@ class About(models.Model):
 class Choose(models.Model):
     icon = IconForeignKeyField(blank=True, null=True)
     title = models.CharField(blank=True, null=True, max_length=150)
-    short_description = models.CharField(blank=True, null=True, max_length=127)
-    video = models.FileField(
-        'Video', upload_to='Choose_uploaded', null=True, blank=True)
+    description = models.CharField(blank=True, null=True, max_length=127)
+
+
 
     def __str__(self):
         return self.title
@@ -71,9 +51,6 @@ class Choose(models.Model):
     #     verbose_name_plural = 'Chooses'
         # ordering = ('-created_at',)
 
-# ---------------------------------------      Team     ----------------------------------
-#
-    # Team settles in this stock
 
 
 class Team(models.Model):
@@ -229,3 +206,6 @@ class Contact(models.Model):
         verbose_name = 'Contact'
         verbose_name_plural = "Contacts"
         # ordering = ('-created_at',)
+
+
+

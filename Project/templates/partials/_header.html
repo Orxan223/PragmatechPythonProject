@@ -64,10 +64,13 @@
     <div class="mobile-menu">
         <div class="menu-backdrop"></div>
         <div class="close-btn"><i class="fas fa-times"></i></div>
-        
+
         <nav class="menu-box">
-            <div class="nav-logo"><a href="{% url 'index' %}"><img src="{% static 'assets/images/logo.png' %}" alt="" title=""></a></div>
-            <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            <div class="nav-logo"><a href="{% url 'index' %}"><img src="{% static 'assets/images/logo.png' %}" alt=""
+                        title=""></a></div>
+            <div class="menu-outer">
+                <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+            </div>
             <div class="contact-info">
                 <h4>Contact Info</h4>
                 <ul>
@@ -88,15 +91,15 @@
         </nav>
     </div><!-- End Mobile Menu -->
 
- 
+
     <!-- main header -->
     <header class="main-header style-three">
         <div class="header-upper">
             <div class="outer-box clearfix">
                 <div class="left-column pull-left clearfix">
                     <div class="logo-box pull-left">
-                        <figure class="logo"><a href="{% url 'index' %}"><img src="{% static 'assets/images/logo-3.png' %}"
-                                    alt=""></a></figure>
+                        <figure class="logo"><a href="{% url 'index' %}"><img
+                                    src="{% static 'assets/images/logo-3.png' %}" alt=""></a></figure>
                     </div>
                     <div class="menu-area pull-right clearfix">
                         <!--Mobile Navigation Toggler-->
@@ -112,14 +115,8 @@
                                         <a href="{% url 'index' %}">Home</a>
                                     </li>
 
-                                    <li class="technology">
-                                        <a href="{% url 'technology' %}">Technology</a>
-                                    </li>
 
-                                    <li class="about">
-                                        <a href="{% url 'about' %}">About</a>
-                                    </li>
-
+                              
                                     <li class="choose">
                                         <a href="{% url 'choose' %}">Choose</a>
                                     </li>
@@ -138,16 +135,20 @@
                                     <li class="case">
                                         <a href="{% url 'work' %}">Work</a>
                                     </li>
-                                   
-     
+
+
                                     <li class="blog">
                                         <a href="{% url 'blog' %}">Blog</a>
                                     </li>
 
 
 
+
+
+
+
                                     <li class="news">
-                                        <a href="{% url 'news' %}">News</a>
+                                        <a href="{% url 'news-detail' %}">News-detail</a>
                                     </li>
                                 </ul>
                             </div>

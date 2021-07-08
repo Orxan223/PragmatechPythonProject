@@ -14,14 +14,15 @@ urlpatterns = [
 
     path('work/',work,name='work'),
 
-    path('team/',team,name='team'),
     
     path('skills/',skills,name='skills'),
 
     path('news/',news,name='news'),
 
 
-    path('skills/',skills,name='skills'),
+
+
+    path('news-detail/',news_detail,name='news-detail'),
 
 
     path('counter/',counter,name='counter'),

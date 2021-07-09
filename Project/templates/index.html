@@ -2,14 +2,16 @@
 {% load static %}
 {% block content %}
 
-   <!--Page Title-->
-   <section class="page-title text-center style-two">
-    <div class="pattern-layer"  style="background: url( {% static 'assets/images/x.png' %})"></div>
+<!--Page Title-->
+<section class="page-title text-center style-two">
+    <div class="pattern-layer" style="background: url( {% static 'assets/images/x.png' %})"></div>
     <div class="auto-container">
         <div class="content-box">
             <ul class="bread-crumb clearfix">
-                <li><a href="{% url 'index' %}"><h1>Home</h1></a></li>
-               
+                <li><a href="{% url 'index' %}">
+                        <h1>Home</h1>
+                    </a></li>
+
             </ul>
         </div>
     </div>
@@ -19,150 +21,150 @@
 
 
 
-    <!-- about-style-three -->
-    <section class="about-style-three">
-        <div class="auto-container">
-            <div class="row clearfix">
-                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                    <div id="image_block_02">
-                        <div class="image-box">
-                            {% for x in about %}
-                            <figure class="image image-1 wow slideInLeft" data-wow-delay="300ms" data-wow-duration="1500ms"><img src="{{x.image.url}}" alt=""></figure>
-                            <figure class="image image-2 wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms"><a href="" class="lightbox-image"><img src="" alt=""></a></figure>
-                            {% endfor %}
-                        </div>
+<!-- about-style-three -->
+<section class="about-style-three">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                <div id="image_block_02">
+                    <div class="image-box">
+                        {% for x in about %}
+                        <figure class="image image-1 wow slideInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <img src="{{x.image.url}}" alt=""></figure>
+                        <figure class="image image-2 wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <a href="" class="lightbox-image"><img src="" alt=""></a></figure>
+                        {% endfor %}
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                    <div id="content_block_05">
-                        <div class="content-box">
-                            {% for x in about %}
-                            
-                            <div class="sec-title text-left">
-                                <p>About</p>
-                                <h2>{{x.title}}</h2>
-                               
-                            </div>
-                            <div class="text">
-                                <p>{{x.text}}</p>
-                                <!-- <p>{{x.text}}</p> -->
-                            </div>
-                            {% endfor %}
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                <div id="content_block_05">
+                    <div class="content-box">
+                        {% for x in about %}
+
+                        <div class="sec-title text-left">
+                            <p>About</p>
+                            <h2>{{x.title}}</h2>
 
                         </div>
+                        <div class="text">
+                            <p>{{x.text}}</p>
+                            <!-- <p>{{x.text}}</p> -->
+                        </div>
+                        {% endfor %}
+
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- about-style-three end -->
+    </div>
+</section>
+<!-- about-style-three end -->
 
 
 
 
-    <!-- chooseus-style-two -->
-    <section class="chooseus-style-two bg-color-3">
-        <div class="bg-layer" style="background-image: url(assets/images/background/choose-bg.png);"></div>
-        <div class="auto-container">
-            {% for x in choose %}
-            
-            <div class="title-inner mb-35 clearfix">
-                <div class="sec-title light text-left pull-left">
-                    <p>Why Choose Us</p>
-                    <h2>Reason for people choosing our company</h2>
-                    <div class="decor" style="background-image: url(assets/images/icons/decor-5.png);"></div>
-                </div>
-                <div class="text pull-right">
-                    <p>{{x.short_description}}</p>
-                </div>
+<!-- chooseus-style-two -->
+<section class="chooseus-style-two bg-color-3">
+    <div class="bg-layer" style="background-image: url(assets/images/background/choose-bg.png);"></div>
+    <div class="auto-container">
+        {% for x in choose %}
+
+        <div class="title-inner mb-35 clearfix">
+            <div class="sec-title light text-left pull-left">
+                <p>Why Choose Us</p>
+                <h2>Reason for people choosing our company</h2>
+                <div class="decor" style="background-image: url(assets/images/icons/decor-5.png);"></div>
             </div>
-            <div class="row clearfix">
-                <div class="col-lg-4 col-md-6 col-sm-12 single-column">
-                    <div class="single-item wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <h4>{{x.title}}</h4>
-                            <div class="box">
-                                <div class="icon-box"><i class="flaticon-global"></i></div>
-                                <p>{{x.description}}</p>
-                            </div>
+            <div class="text pull-right">
+                <p>{{x.short_description}}</p>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-lg-4 col-md-6 col-sm-12 single-column">
+                <div class="single-item wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <h4>{{x.title}}</h4>
+                        <div class="box">
+                            <div class="icon-box"><i class="flaticon-global"></i></div>
+                            <p>{{x.description}}</p>
                         </div>
                     </div>
                 </div>
-             
+            </div>
+
+        </div>
+        {% endfor %}
+
+    </div>
+</section>
+<!-- chooseus-style-two end -->
+
+
+
+
+
+<!-- skills-section -->
+<section class="skills-section">
+    <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-4.png);"></div>
+    <div class="auto-container">
+        <div class="row clearfix">
+            {% for x in skill %}
+
+            <div class="col-lg-6 col-md-6 col-sm-12 image-column">
+                <div class="image-box wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <figure class="image js-tilt"><img src="{{x.image}}" alt=""></figure>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 content-column">
+                <div id="content_block_02">
+                    <div class="content-box">
+
+                        <div class="sec-title text-left">
+                            <p>Skills & Facts</p>
+                            <h2>{{x.title}}</h2>
+                            <div class="decor" style="background-image: url('{% static "
+                                assets/images/icons/decor-1.png" %}');"></div>
+                        </div>
+                        <div class="text">
+                            <p>{{x.text}}</p>
+                        </div>
+                        <div class="inner-box">
+                            <div class="progress-box">
+                                <h5>{{x.name}}</h5>
+                                <div class="icon-box"><i class="flaticon-chat"></i></div>
+                                <div class="bar">
+                                    <div class="bar-inner count-bar" data-percent="{{x.eded}}%">
+                                        <div class="count-text">{{x.percent}}</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
             </div>
             {% endfor %}
 
         </div>
-    </section>
-    <!-- chooseus-style-two end -->
+    </div>
+</section>
+<!-- skills-section end -->
 
 
 
 
 
-
-
-
-
-
-    <!-- skills-section -->
-    <section class="skills-section">
-        <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-4.png);"></div>
-        <div class="auto-container">
-            <div class="row clearfix">
-                {% for x in skill %}
-
-                <div class="col-lg-6 col-md-6 col-sm-12 image-column">
-                    <div class="image-box wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <figure class="image js-tilt"><img src="{{x.image}}" alt=""></figure>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 content-column">
-                    <div id="content_block_02">
-                        <div class="content-box">
-                            
-                            <div class="sec-title text-left">
-                                <p>Skills & Facts</p>
-                                <h2>{{x.title}}</h2>
-                                <div class="decor" style="background-image: url('{% static "assets/images/icons/decor-1.png" %}');"></div>
-                            </div>
-                            <div class="text">
-                                <p>{{x.text}}</p>
-                            </div>
-                            <div class="inner-box">
-                                <div class="progress-box">
-                                    <h5>{{x.name}}</h5>
-                                    <div class="icon-box"><i class="flaticon-chat"></i></div>
-                                    <div class="bar">
-                                        <div class="bar-inner count-bar" data-percent="{{x.eded}}%"><div class="count-text">{{x.percent}}%</div></div>
-                                    </div>
-                                </div>
-                           
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-
-            </div>
-        </div>
-    </section>
-    <!-- skills-section end -->
-
-
-
-
-
-
-
- <!--Page Title-->
- <section class="page-title text-center style-two">
+<!--Page Title-->
+<section class="page-title text-center style-two">
     <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-62.png);"></div>
     <div class="auto-container">
-        <div class="content-box" >
+        <div class="content-box">
             <ul class="bread-crumb clearfix">
-                <li><a href="index.html"><h1>Blog</h1></a></li>
+                <li><a href="index.html">
+                        <h1>Blog</h1>
+                    </a></li>
             </ul>
         </div>
     </div>
@@ -174,26 +176,32 @@
         <div class="row clearfix">
             <div class="col-lg-4 col-md-6 col-sm-12 news-block">
                 {% for x in blog %}
-                
-              
+
+
                 <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="inner-box">
                         <figure class="image-box">
                             <img src="{{x.image.url}}" alt="">
-                            <a href="{% static 'assets/images/news/news-6.jpg' %}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                            <a href="{% static 'assets/images/news/news-6.jpg' %}" class="lightbox-image"
+                                data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
                         </figure>
                         <div class="lower-content">
-                            <div class="file-box"><i class="far fa-folder-open"></i><p>{{x.profession}}</p></div>
+                            <div class="file-box"><i class="far fa-folder-open"></i>
+                                <p>{{x.profession}}</p>
+                            </div>
                             <div class="title-box">
-                                <div class="post-date"><p>02</p><span>Jan</span></div>
+                                <div class="post-date">
+                                    <p>02</p><span>Jan</span>
+                                </div>
                                 <h4><a href="blog-details.html">{{x.title}}</a></h4>
                             </div>
-                            <div class="link"><a href="{% url 'blog' %}" class="btn-style-four">Read More<span>+</span></a></div>
+                            <div class="link"><a href="{% url 'blog' %}" class="btn-style-four">Read
+                                    More<span>+</span></a></div>
                         </div>
                     </div>
                 </div>
                 {% endfor %}
-            </div>      
+            </div>
         </div>
         <div class="pagination-wrapper text-center">
             <ul class="pagination clearfix">
@@ -208,98 +216,113 @@
 </section>
 <!-- blog-classic-grid end -->
 
- 
-    <!-- news-section -->
-    <section class="news-section style-two style-three">
-        <div class="auto-container">
-            <div class="upper-box clearfix mb-40">
-                <div class="sec-title text-left pull-left">
-                    <p>News & Updates</p>
-                    <h2>Company news & updates</h2>
-                    <div class="decor" style="background-image: url(assets/images/icons/decor-1.png);"></div>
-                </div>
-               
+
+<!-- news-section -->
+<section class="news-section style-two style-three">
+    <div class="auto-container">
+        <div class="upper-box clearfix mb-40">
+            <div class="sec-title text-left pull-left">
+                <p>News & Updates</p>
+                <h2>Company news & updates</h2>
+                <div class="decor" style="background-image: url(assets/images/icons/decor-1.png);"></div>
             </div>
-            <div class="row clearfix">
-                <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                    <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        {% for x in news %}
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <img src="{{x.image.url}}" alt="">
-                                <a href="{% static 'assets/images/news/news-1.jpg' %}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
-                            </figure>
-                            <div class="lower-content">
-                                <div class="file-box"><i class="far fa-folder-open"></i><p>{{x.pese}}</p></div>
-                                <div class="title-box">
-                                    <div class="post-date"><p>05</p><span>Jan</span></div>
-                                    <h4><a href="blog-details.html">{{x.title}}</a></h4>
-                                </div>
-                                <div class="text">
-                                    <p>{{x.short_description}}</p>
-                                </div>
+
+        </div>
+        <div class="row clearfix">
+            <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    {% for x in news %}
+                    <div class="inner-box">
+                        <figure class="image-box">
+                            <img src="{{x.image.url}}" alt="">
+                            <a href="{% static 'assets/images/news/news-1.jpg' %}" class="lightbox-image"
+                                data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                        </figure>
+                        <div class="lower-content">
+                            <div class="file-box"><i class="far fa-folder-open"></i>
+                                <p>{{x.pese}}</p>
                             </div>
+                            <div class="title-box">
+                                <div class="post-date">
+                                    <p>05</p><span>Jan</span>
+                                </div>
+                                <h4><a href="blog-details.html">{{x.title}}</a></h4>
+                            </div>
+                            <div class="text">
+                                <p>{{x.short_description}}</p>
+                            </div>
+                            <div class="link"><a href="{% url 'news-detail' %}" class="btn-style-four">Read
+                                    More<span>+</span></a></div>
+
                         </div>
-                        {% endfor %}
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
-    </section>
-    <!-- news-section end -->
+    </div>
+</section>
+<!-- news-section end -->
 
-    <hr>
-    
-    <!-- funfact-style-two -->
-   
+<hr>
 
-    <hr>
-    <!-- contact-section -->
-    <section class="contact-section">
-       
+<!-- funfact-style-two -->
 
-        <div class="auto-container">
-            <h1>Contact</h1>
-            <div class="row clearfix">
-               
-                <div class="col-lg-12 col-md-12 col-sm-12 content-column">
-                    <div id="content_block_09">
-                        <div class="content-box">
-                            <form method="post" action="assets/inc/sendemail.php" id="contact-form" class="default-form"> 
-                                <div class="form-group">
-                                    <label><i class="far fa-user"></i>Your Name</label>
-                                    <input type="text" name="username" placeholder="Enter name here" required="">
+
+<hr>
+
+<!-- contact-section -->
+<section class="contact-section">
+
+
+    <div class="auto-container">
+        <h1>Contact</h1>
+        <div class="row clearfix">
+
+            <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+                <div id="content_block_09">
+                    <div class="content-box">
+                        <form method="post" action="{% url 'index' %}" id="contact-form" class="default-form">
+                            {% csrf_token %}
+                            {% for field in form %}
+
+                            <div class="form-group">
+                                <!-- {{form.full_name}} -->
+                                {{field}}
+
+                            </div>
+                            {% endfor %}
+
+                            <!-- <div class="form-group">
+                                    {{form.email}}
+
                                 </div>
                                 <div class="form-group">
-                                    <label><i class="far fa-envelope"></i>Email Address</label>
-                                    <input type="email" name="email" placeholder="Email Address" required="">
+                                    {{form.subject}}
+
                                 </div>
                                 <div class="form-group">
-                                    <label><i class="far fa-user"></i>Subject</label>
-                                    <input type="text" name="subject" placeholder="Subject" required="">
-                                </div>
-                                <div class="form-group">
-                                    <label><i class="fas fa-text-height"></i>Message</label>
-                                    <textarea name="message" placeholder="Message goes here"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <button class="theme-btn style-nine" type="submit" name="submit-form">Send Your Message</button>
-                                </div>
-                            </form>
-                        </div>
+                                    {{form.message}} -->
+
                     </div>
-                </div>
-              
-                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                    <div class="image-box wow slideInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <figure class="image js-tilt"><img src="assets/images/resource/illastration-6.png" alt=""></figure>
+                    <div class="form-group">
+                        <button class="theme-btn style-nine" type="submit" name="submit-form">Send Your Message</button>
                     </div>
+                    </form>
                 </div>
             </div>
-            
         </div>
-    </section>
-    <!-- contact-section end -->
-    <hr>
 
-    {% endblock %}
+        <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+            <div class="image-box wow slideInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+                <figure class="image js-tilt"><img src="assets/images/resource/illastration-6.png" alt=""></figure>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</section>
+<!-- contact-section end -->
+<hr>
+
+{% endblock %}

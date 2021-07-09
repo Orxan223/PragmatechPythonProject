@@ -1,25 +1,19 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
 from .views import *
 urlpatterns = [
     path('', index, name='index'),
 
     path('blog/', blog, name='blog'),
 
-    path('technology/',technology,name='technology'),
 
-    path('about/',about,name='about'),
 
-    path('case/',case,name='case'),
 
-    path('work/',work,name='work'),
 
     
-    path('skills/',skills,name='skills'),
+    path('skill/',skill,name='skill'),
 
     path('news/',news,name='news'),
-
-
 
 
     path('news-detail/',news_detail,name='news-detail'),
@@ -29,15 +23,20 @@ urlpatterns = [
 
 
 
+    path('team/', include('Team.urls')),
 
+
+    path('choose/',include('Choose.urls')),
+
+
+    path('work/',include('work.urls')),
+
+    path('work/',work,name='work'),
 
     path('team/',team,name='team'),
 
-     path('choose/',choose,name='choose'),
+    path('choose/',choose,name='choose'),
 
 
-     path('contact/',contact,name='contact'),
-
-
-
+    path('contact/',contact,name='contact'),
 ]

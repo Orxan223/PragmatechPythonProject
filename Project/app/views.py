@@ -1,14 +1,21 @@
 from django.shortcuts import render
-from .models import About, Choose
+from .models import About, Choose,Skill,Blog,News
 # Create your views here.
 
 
 def index(request):
     about = About.objects.all()
     choose = Choose.objects.all()
+    skill = Skill.objects.all()
+    blog = Blog.objects.all()
+    news = News.objects.all()
     context = {
         "about" : about,
-        'choose' : choose
+        'choose' : choose,
+        'skill' : skill,
+        'blog' : blog,
+        'news' : news,
+
     }
     return render(request, "index.html",context)
 
@@ -17,32 +24,17 @@ def blog(request):
     return render(request, "blog.html")
 
 
-def about(request):
-    # about = About.objects.all()
-    # context = {
-    #     'about' :about
-    # }
-    return render(request, "about.html")
 
 
-def technology(request):
-    return render(request, "technology.html")
 
-
-def case(request):
-    return render(request, "case.html")
-
-
-def team(request):
-    return render(request, "team.html")
 
 
 def counter(request):
     return render(request, "counter.html")
 
 
-def skills(request):
-    return render(request, "skills.html")
+def skill(request):
+    return render(request, "skill.html")
 
 
 def news(request):

@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'jet',
     'app',
     'Team',
+    'Choose',
+    'work',
     'font_icons',
     'django.contrib.admin',
     'django.contrib.auth',

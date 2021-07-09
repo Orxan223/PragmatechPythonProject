@@ -4,7 +4,7 @@
 
    <!--Page Title-->
    <section class="page-title text-center style-two">
-    <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-62.png);"></div>
+    <div class="pattern-layer"  style="background: url( {% static 'assets/images/x.png' %})"></div>
     <div class="auto-container">
         <div class="content-box">
             <ul class="bread-crumb clearfix">
@@ -110,49 +110,41 @@
         <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-4.png);"></div>
         <div class="auto-container">
             <div class="row clearfix">
+                {% for x in skill %}
+
                 <div class="col-lg-6 col-md-6 col-sm-12 image-column">
                     <div class="image-box wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <figure class="image js-tilt"><img src="{% static 'assets/images/resource/illastration-1.png' %}" alt=""></figure>
+                        <figure class="image js-tilt"><img src="{{x.image}}" alt=""></figure>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 content-column">
                     <div id="content_block_02">
                         <div class="content-box">
+                            
                             <div class="sec-title text-left">
                                 <p>Skills & Facts</p>
-                                <h2>We keep our self updated with latest trends</h2>
-                                <div class="decor" style="background-image: url(assets/images/icons/decor-1.png);"></div>
+                                <h2>{{x.title}}</h2>
+                                <div class="decor" style="background-image: url('{% static "assets/images/icons/decor-1.png" %}');"></div>
                             </div>
                             <div class="text">
-                                <p>As a solution providing company we offer a  range consulting, development quality testing services with 100% satisfaction.</p>
+                                <p>{{x.text}}</p>
                             </div>
                             <div class="inner-box">
                                 <div class="progress-box">
-                                    <h5>Data Consulting</h5>
+                                    <h5>{{x.name}}</h5>
                                     <div class="icon-box"><i class="flaticon-chat"></i></div>
                                     <div class="bar">
-                                        <div class="bar-inner count-bar" data-percent="62%"><div class="count-text">62%</div></div>
+                                        <div class="bar-inner count-bar" data-percent="{{x.eded}}%"><div class="count-text">{{x.percent}}%</div></div>
                                     </div>
                                 </div>
-                                <div class="progress-box">
-                                    <h5>Big Data & BI</h5>
-                                    <div class="icon-box"><i class="flaticon-cloud-computing"></i></div>
-                                    <div class="bar">
-                                        <div class="bar-inner count-bar" data-percent="89%"><div class="count-text">89%</div></div>
-                                    </div>
-                                </div>
-                                <div class="progress-box">
-                                    <h5>Predictive Analysis</h5>
-                                    <div class="icon-box"><i class="flaticon-analysis-1"></i></div>
-                                    <div class="bar">
-                                        <div class="bar-inner count-bar" data-percent="75%"><div class="count-text">75%</div></div>
-                                    </div>
-                                </div>
+                           
                                
                             </div>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
+
             </div>
         </div>
     </section>
@@ -181,60 +173,27 @@
     <div class="auto-container">
         <div class="row clearfix">
             <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                {% for x in blog %}
+                
+              
                 <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="inner-box">
                         <figure class="image-box">
-                            <img src="{% static 'assets/images/news/news-6.jpg' %}" alt="">
+                            <img src="{{x.image.url}}" alt="">
                             <a href="{% static 'assets/images/news/news-6.jpg' %}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
                         </figure>
                         <div class="lower-content">
-                            <div class="file-box"><i class="far fa-folder-open"></i><p>Data Engineering</p></div>
+                            <div class="file-box"><i class="far fa-folder-open"></i><p>{{x.profession}}</p></div>
                             <div class="title-box">
                                 <div class="post-date"><p>02</p><span>Jan</span></div>
-                                <h4><a href="blog-details.html">Naxly Named as a Global Leader in Big Data</a></h4>
+                                <h4><a href="blog-details.html">{{x.title}}</a></h4>
                             </div>
                             <div class="link"><a href="{% url 'blog' %}" class="btn-style-four">Read More<span>+</span></a></div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <img src="{% static 'assets/images/news/news-2.jpg' %}" alt="">
-                            <a href="{% static 'assets/images/news/news-2.jpg' %}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
-                        </figure>
-                        <div class="lower-content">
-                            <div class="file-box"><i class="far fa-folder-open"></i><p>ML Consulting</p></div>
-                            <div class="title-box">
-                                <div class="post-date"><p>01</p><span>Jan</span></div>
-                                <h4><a href="blog-details.html">The Current State of Artificial Intelligence Infographic.</a></h4>
-                            </div>
-                            <div class="link"><a href="{% url 'blog' %}" class="btn-style-four">Read More<span>+</span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <img src="{% static 'assets/images/news/news-1.jpg' %}" alt="">
-                            <a href="{% static 'assets/images/news/news-1.jpg' %}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
-                        </figure>
-                        <div class="lower-content">
-                            <div class="file-box"><i class="far fa-folder-open"></i><p>Data Strategy</p></div>
-                            <div class="title-box">
-                                <div class="post-date"><p>31</p><span>Dec</span></div>
-                                <h4><a href="blog-details.html">Naxly as the Winners in Global Agency Awards</a></h4>
-                            </div>
-                            <div class="link"><a href="{% url 'blog' %}" class="btn-style-four">Read More<span>+</span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          
+                {% endfor %}
+            </div>      
         </div>
         <div class="pagination-wrapper text-center">
             <ul class="pagination clearfix">
@@ -264,65 +223,24 @@
             <div class="row clearfix">
                 <div class="col-lg-4 col-md-6 col-sm-12 news-block">
                     <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        {% for x in news %}
                         <div class="inner-box">
                             <figure class="image-box">
-                                <img src="{% static 'assets/images/news/news-1.jpg' %}" alt="">
+                                <img src="{{x.image.url}}" alt="">
                                 <a href="{% static 'assets/images/news/news-1.jpg' %}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
                             </figure>
                             <div class="lower-content">
-                                <div class="file-box"><i class="far fa-folder-open"></i><p>Data Engineering</p></div>
+                                <div class="file-box"><i class="far fa-folder-open"></i><p>{{x.pese}}</p></div>
                                 <div class="title-box">
                                     <div class="post-date"><p>05</p><span>Jan</span></div>
-                                    <h4><a href="blog-details.html">Naxly Named as a Global Leader in Big Data</a></h4>
+                                    <h4><a href="blog-details.html">{{x.title}}</a></h4>
                                 </div>
                                 <div class="text">
-                                    <p>Equal blame belongs too those who fail in their through weakness will shrinking.</p>
+                                    <p>{{x.short_description}}</p>
                                 </div>
-                                <div class="link"><a href="{% url 'news-detail' %}"><i class="flaticon-next"></i>Read More</a></div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                    <div class="news-block-one wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <img src="{% static 'assets/images/news/news-2.jpg' %}" alt="">
-                                <a href="{% static 'assets/images/news/news-2.jpg' %}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
-                            </figure>
-                            <div class="lower-content">
-                                <div class="file-box"><i class="far fa-folder-open"></i><p>ML Consulting</p></div>
-                                <div class="title-box">
-                                    <div class="post-date"><p>01</p><span>Jan</span></div>
-                                    <h4><a href="blog-details.html">The Current State of Artificial Intelligence Infographic.</a></h4>
-                                </div>
-                                <div class="text">
-                                    <p>When our power choice untrammelled and then prevents our being able pleasure.</p>
-                                </div>
-                                <div class="link"><a href="{% url 'news-detail' %}"><i class="flaticon-next"></i>Read More</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                    <div class="news-block-one wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <img src="{% static 'assets/images/news/news-3.jpg' %}" alt="">
-                                <a href="{% static 'assets/images/news/news-3.jpg' %}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
-                            </figure>
-                            <div class="lower-content">
-                                <div class="file-box"><i class="far fa-folder-open"></i><p>Data Strategy</p></div>
-                                <div class="title-box">
-                                    <div class="post-date"><p>25</p><span>Dec</span></div>
-                                    <h4><a href="blog-details.html">Naxly as the Winners in Global Agency Awards</a></h4>
-                                </div>
-                                <div class="text">
-                                    <p>Obligations of business it will frequently occur that pleasures have to be repudiated.</p>
-                                </div>
-                                <div class="link"><a href="{% url 'news' %}"><i class="flaticon-next"></i>Read More</a></div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
@@ -334,62 +252,7 @@
     
     <!-- funfact-style-two -->
    
-    <section class="funfact-style-two">
-        
-        <div class="auto-container">
-            <h1>Counter</h1>
-            <div class="row clearfix">
-                
-                <div class="col-lg-3 col-md-6 col-sm-12 counter-block "> 
-                    <div class="counter-block-two wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                       
-                        <div class="inner-box">
-                            
-                            <div class="count-outer count-box">
-                                
-                                <span class="count-text" data-speed="1500" data-stop="3.5">0</span>k
-                                
-                            </div>
-                            <h4>Projects Completed</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 counter-block">
-                    <div class="counter-block-two wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <div class="count-outer count-box">
-                                <span class="count-text" data-speed="1500" data-stop="2.8">0</span>k
-                            </div>
-                            <h4>Industrires Served</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 counter-block">
-                    <div class="counter-block-two wow slideInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <div class="count-outer count-box">
-                                <span class="count-text" data-speed="1500" data-stop="139">0</span>
-                            </div>
-                            <h4>Expert Team Mates</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 counter-block">
-                    <div class="counter-block-two wow slideInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <div class="count-outer count-box">
-                                <span class="count-text" data-speed="1500" data-stop="14">0</span>m
-                            </div>
-                            <h4>Happy Customers</h4>
-                        </div>
-                    
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    </section>
-    <!-- funfact-style-two end -->
+
     <hr>
     <!-- contact-section -->
     <section class="contact-section">

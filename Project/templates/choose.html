@@ -31,6 +31,9 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 content-column">
                     <div id="content_block_04">
                         <div class="content-box">
+                            {% for x in choose %}
+                            
+
                             <div class="single-item">
                                 <div class="icon-box">
                                     <div class="bg-layer" style="background-image: url(assets/images/icons/icon-bg-4.png);"></div>
@@ -38,8 +41,7 @@
                                 </div>
                                 <div class="box">
                                     <h4>Global Experience</h4>
-                                    <p>Nor again is there anyone who loves or pursues pain of itself, because circumstances.</p>
-                                    <a href="index-2.html"><i class="fas fa-arrow-right"></i>More Details</a>
+                                    <p>{{x.description}}</p>
                                 </div>
                             </div>
                             <div class="single-item text-right">
@@ -49,10 +51,10 @@
                                 </div>
                                 <div class="box">
                                     <h4>Value for Results</h4>
-                                    <p>Except obtain some advantages from ithas any to find fault with a consequences.</p>
-                                    <a href="index-2.html">More Details<i class="fas fa-arrow-left"></i></a>
+                                    <p>{{x.description}}</p>
                                 </div>
                             </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

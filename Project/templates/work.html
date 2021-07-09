@@ -26,47 +26,22 @@
         <div class="auto-container">
             <div class="row clearfix">
                 <div class="col-lg-4 col-md-6 col-sm-12 work-block">
+                    {% for x in work %}
                     <div class="work-block-one wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                         <div class="inner-box">
                             <div class="icon-box">
                                 <i class="flaticon-big-data"></i>
                                 <div class="count">01</div>
-                                <div class="bg-pattern" style="background-image: url(assets/images/icons/icon-bg-1.png);"></div>
-                                <div class="overlay-pattern" style="background-image: url(assets/images/icons/icon-bg-2.png);"></div>
+                                <div class="bg-pattern" style="background-image:  url( {% static 'assets/images/Screenshot_4.png' %})"></div>
+                                <div class="overlay-pattern" style="background-image:  url( {% static 'assets/images/Screenshot_4.png' %})"></div>
                             </div>
-                            <h4><a href="index.html">Frame the Problem</a></h4>
-                            <p>To take a trivial example, which idea of ever undertakes.</p>
+                            <h4><a href="index.html">{{x.name}}</a></h4>
+                            <p>{{x.description}}</p>
                         </div>
-                    </div>
+                    </div>   
+                    {% endfor %}
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 work-block">
-                    <div class="work-block-one wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                                <i class="flaticon-ui"></i>
-                                <div class="count">02</div>
-                                <div class="bg-pattern" style="background-image: url(assets/images/icons/icon-bg-1.png);"></div>
-                                <div class="overlay-pattern" style="background-image: url(assets/images/icons/icon-bg-2.png);"></div>
-                            </div>
-                            <h4><a href="index.html">Collect the Data</a></h4>
-                            <p>Best every pleasure is too welcomed every pain avoided.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 work-block">
-                    <div class="work-block-one wow slideInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                                <i class="flaticon-brain-1"></i>
-                                <div class="count">03</div>
-                                <div class="bg-pattern" style="background-image: url(assets/images/icons/icon-bg-1.png);"></div>
-                                <div class="overlay-pattern" style="background-image: url(assets/images/icons/icon-bg-2.png);"></div>
-                            </div>
-                            <h4><a href="index.html">Process the Data</a></h4>
-                            <p>Have to be repudiated annoyances accepted the wise.</p>
-                        </div>
-                    </div>
-                </div>
+          
             </div>
         </div>
     </section>

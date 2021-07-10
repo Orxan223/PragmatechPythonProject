@@ -1,3 +1,4 @@
+from django.http import request
 from django.shortcuts import render,redirect
 from .models import About, Choose,Skill,Blog,News,Contact
 # Create your views here.
@@ -56,6 +57,10 @@ def skill(request):
 
 def news(request):
     return render(request, "news.html")
+
+def news_detail(request,slug):
+    news_detail = News.objects.get(slug=slug)
+    return render(request, "news_detail.html",{'news_detail' : news_detail})
 
 
 def work(request):

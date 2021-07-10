@@ -1,0 +1,60 @@
+{% extends "partials/_base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- news-section -->
+<!--Page Title-->
+
+
+<section class="page-title text-center style-two">
+    <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-62.png);"></div>
+    <div class="auto-container">
+        <div class="content-box">
+            <ul class="bread-crumb clearfix">
+                <li><a href="{% url 'index' %}">
+                        <h1>News</h1>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    </div>
+    <div class="row clearfix">
+        <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+            <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                {% for x in news %}
+                <div class="inner-box">
+                    <figure class="image-box">
+                        <img src="{{x.image.url}}" alt="">
+                        <a href="{% static 'assets/images/news/news-1.jpg' %}" class="lightbox-image"
+                            data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                    </figure>
+                    <div class="lower-content">
+                        <div class="file-box"><i class="far fa-folder-open"></i>
+                            <p>{{x.pese}}</p>
+                        </div>
+                        <div class="title-box">
+                            <div class="post-date">
+                                <p>05</p><span>Jan</span>
+                            </div>
+                            <h4><a href="{{x.get_absolute_url}}">{{x.title}}</a></h4>
+                        </div>
+                        <div class="text">
+                            <p>{{x.short_description}}</p>
+                        </div>
+                        <div class="link"><a href="{{x.get_absolute_url}}" class="btn-style-four">Read
+                                More<span></span></a></div>
+
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- news-section end -->
+{% endblock %}

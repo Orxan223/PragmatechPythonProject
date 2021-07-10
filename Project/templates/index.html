@@ -217,56 +217,10 @@
 <!-- blog-classic-grid end -->
 
 
-<!-- news-section -->
-<section class="news-section style-two style-three">
-    <div class="auto-container">
-        <div class="upper-box clearfix mb-40">
-            <div class="sec-title text-left pull-left">
-                <p>News & Updates</p>
-                <h2>Company news & updates</h2>
-                <div class="decor" style="background-image: url(assets/images/icons/decor-1.png);"></div>
-            </div>
 
-        </div>
-        <div class="row clearfix">
-            <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                <div class="news-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    {% for x in news %}
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <img src="{{x.image.url}}" alt="">
-                            <a href="{% static 'assets/images/news/news-1.jpg' %}" class="lightbox-image"
-                                data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
-                        </figure>
-                        <div class="lower-content">
-                            <div class="file-box"><i class="far fa-folder-open"></i>
-                                <p>{{x.pese}}</p>
-                            </div>
-                            <div class="title-box">
-                                <div class="post-date">
-                                    <p>05</p><span>Jan</span>
-                                </div>
-                                <h4><a href="blog-details.html">{{x.title}}</a></h4>
-                            </div>
-                            <div class="text">
-                                <p>{{x.short_description}}</p>
-                            </div>
-                            <div class="link"><a href="{{news.get.absolute.url}}" class="btn-style-four">Read
-                                    More<span>+</span></a></div>
 
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- news-section end -->
 
-<hr>
 
-<!-- funfact-style-two -->
 
 
 <hr>

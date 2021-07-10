@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'Team',
     'Choose',
     'work',
+    'news',
     'font_icons',
     'django.contrib.admin',
     'django.contrib.auth',

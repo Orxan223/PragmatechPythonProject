@@ -1,6 +1,6 @@
 from django.http import request
 from django.shortcuts import render,redirect
-from .models import About, Choose,Skill,Blog,News,Contact
+from .models import About, Choose,Skill,Blog,Contact
 # Create your views here.
 from django.forms import forms
 from .forms import  ContactForm
@@ -12,7 +12,7 @@ def index(request):
     choose = Choose.objects.all()
     skill = Skill.objects.all()
     blog = Blog.objects.all()
-    news = News.objects.all()
+ 
     form=ContactForm()
     if request.method == "POST":
         form = ContactForm(request.POST)
@@ -31,9 +31,7 @@ def index(request):
         'choose' : choose,
         'skill' : skill,
         'blog' : blog,
-        'news' : news,
         'form' : form,
-
     }
     return render(request, "index.html",context)
 
@@ -58,17 +56,13 @@ def skill(request):
 def news(request):
     return render(request, "news.html")
 
-def news_detail(request,slug):
-    news_detail = News.objects.get(slug=slug)
-    return render(request, "news_detail.html",{'news_detail' : news_detail})
+
 
 
 def work(request):
     return render(request, "work.html")
 
 
-def news_detail(request):
-    return render(request, "news-detail.html")
 
 
 def team(request):

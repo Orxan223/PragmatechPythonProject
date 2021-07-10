@@ -2,9 +2,8 @@ from django.db import models
 from django.db.models.deletion import CASCADE
 from django.db.models.fields.related import ForeignKey
 from font_icons.models import IconForeignKeyField
-# from django.contrib.auth import get_user_model
-# User= get_user_model
-from django.urls import reverse
+
+
 # ---------------------------------------      About     ----------------------------------
 # About settles in this stock
 
@@ -109,32 +108,6 @@ class Profession(models.Model):
     #     verbose_name_plural = "Categories"
         # ordering = ('name', '-created_at')
 
-# ---------------------------------------      News     ----------------------------------
-
-    # News settles in this stock
-
-
-class News(models.Model):
-    title = models.CharField(blank=True, null=True, max_length=150)
-    short_description =  models.CharField(blank=True, null=True, max_length=150)
-    slug = models.SlugField('Slug',max_length=127)
-    image = models.ImageField('Sekil', upload_to='Blog_image')
-    pese = models.ForeignKey('Pese', on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.title
-
-
-    def get_absolute_url(self):
-        return reverse('news_detail',args={self.slug})
-
-
-class Pese(models.Model):
-    name = models.CharField(blank=True, null=True, max_length=150)
-    icon = IconForeignKeyField(blank=True,null=True)
-
-    def __str__(self):
-        return self.name
 
 
 

@@ -1,7 +1,6 @@
 from django.contrib import admin
-from .models import About  , Choose, Blog  ,Skill,Category  , News,Contact,Category,Profession,Pese
+from .models import About  , Choose, Blog  ,Skill,Category  ,Contact,Category,Profession
 # Register your models here.
-
 
 
 
@@ -47,18 +46,6 @@ admin.site.register(Blog,BlogAdmin)
 
 
 admin.site.register(Profession)
-
-# ---------------------------------------      News     ---------------------------------- 
-
-class NewsAdmin(admin.ModelAdmin):
-    list_display = ('title',)
-
-admin.site.register(News,NewsAdmin)
-
-
-
-
-admin.site.register(Pese)
 
 
 

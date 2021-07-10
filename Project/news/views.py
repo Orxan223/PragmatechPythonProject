@@ -3,8 +3,6 @@ from .models import *
 # Create your views here.
 def news(request):
     news = News.objects.all()
-    
-
     context = {
         'news' : news
     }

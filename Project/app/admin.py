@@ -9,6 +9,7 @@ from .models import About  , Choose, Blog  ,Skill,Category  ,Contact,Category,Pr
 
 class AboutAdmin(admin.ModelAdmin):
     list_display = ('title',)
+    
 admin.site.register(About,AboutAdmin)
 
 

@@ -41,4 +41,4 @@ Work views - yazıldı
 Contact form - yazıldı
 
 ### Week04 Day05
-Tasklar yazıldı - Algorithms , SEARCH əlavə edildi.
+Tasklar yazıldı - Algorithms , SEARCH əlavə edildi

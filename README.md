@@ -13,15 +13,35 @@
 
 
 # Tasks
-### Week04 Day01
+### Week03 Day01
 Model - Technology, About, Choose , Team , Case , Work , Blog , News
 
-### Week04 Day02
+### Week03 Day02
 Jet admin quraşdırıldı.
 
-### Week04 Day03
+### Week03 Day03
 Django queries.(Part 1)
 
-### Week04 Day04
+### Week03 Day04
 22 dənə query set yazıldı.(Part 2)
 
+
+### Week04 Day01
+About views - yazıldı
+Choose views - yazıldı
+
+### Week04 Day02
+Blog views - yazıldı
+Skill views - yazıldı
+News views - yazıldı
+Team views - yazıldı
+Work views - yazıldı
+
+### Week04 Day03
+Contact form - yazıldı
+
+### Week04 Day04
+get_absolute_url - istifadə edildi
+
+### Week04 Day05
+Tasklar yazıldı - Algorithms , SEARCH əlavə edildi

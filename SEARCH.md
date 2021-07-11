@@ -321,3 +321,62 @@ B)coxlu Receipe  1 Category(one to many):
 a Category-de 10 dene Receipe ola biler.
 
 COX TEREF HARDADIRSA RELATIONS ORA VERILIR. --> 
+
+
+
+<!-- -----------------------------------------------Admin------------------------------------------------------
+
+    #list_display = ('title',)
+    # Menasindan da gorunduyu kimi listdeki elemetleri display etmek ucundur
+
+    # fields = ('title',)
+    # Yalniz qeyd edilen hisseni gosderir
+
+    # exclude = ('title',)
+    # Qeyd edilen yer xaric , digerlerini gosderir
+
+    # list_filter = ('text',) 
+    # Admin sehifesinde sag hissede gorduyumuz filterleme isini gormek ucundur. Meselen
+    # qeyd etdiyimiz kimi text gore filterleme etsek ,veridiyimiz textlere esasen filterleme isleri aparilacaq
+
+    # search_fields = ('title',)
+    # Admin page-de serach ucun yer acilir, ve burada qeyd etdiyimiz title gore seacrh edib bize getirir
+
+
+
+<!-- -----------------------------------------------Form------------------------------------------------------
+Form ustunlukleri:
+-Daha tehlukesizdi
+Html gore daha tehlukesizdi, cunki html qorumasi yoxdu amma formlarda csrf_token olduguna gore daha tehlukesizdi
+-Coxlu funksiyalar var ,metodlar falan.Funksiyanaligi artirir.
+
+----------------------------------------------------GET / POST-------------------------------------------------
+GET - sehifeye kecid eden zaman yeni sehifenin url muraciet etdiyimiz zaman . Data uzunlugunda limitlemeler var.
+Get - melumati elde elemek ,oxumaq
+
+POST - sehifeden bize data gelirse. Daha tehlukesizdi
+Post-neyise create elemekdir
+Post- Data base melumat yazanda,submit kimi isler goren de 
+
+
+
+
+-------------------------------------------------------Task---------------------------------------------
+
+Aşağıdakı sualları cavablandıraraq kod nümumələri ilə izahlı şəkildə research.md faylına yazın
+Template tag nədir?
+Template filter nədir?
+
+
+Template {% tag %} nədir?
+Tamplate taglar kod təkrarlanmasını aradan qaldırmaq üçündur.Səhifəde davamlı göstərməli olduğunuz bir sahə var və bu sahənin göstərilməsi üçün göndərilən məlumatları hər səhifəyə yenidən göndərməlisiniz. Tamplate taglar  işə başladığı yer budur. Tamplate taglar , adından da göründüyü kimi, davamlı ehtiyac olduqda qısa etiketli bir tag çağırmaqdır.
+Meselen :
+Block -  Bildiyimiz block taglari var ki,bunu biz oz template-mizde istifade etmisik ve bunun da neticesidir ki,
+biz daha az koddan istifade etmisik.
+Csrf_token - biz tehlukesizlik vasitesile istifade edirik formlar-da
+
+
+
+Template {{filter}} nədir?
+Bize bezi funksionaliqlar vermkede komek olur. Bu kodlar vasitesile isdediymiz hiseleri filterliyerek en tez sekilde 
+isdediyimiz neticeleri aliriq. Numunelerde bunun nece usdunluk verdiyine nezer yetirek (Algorithms) 

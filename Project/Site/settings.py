@@ -32,12 +32,11 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'jet',
-    'app',
-    'Team',
-    'Choose',
-    'work',
-    'news',
-    'font_icons',
+    'app.apps.AppConfig',
+    'Choose.apps.ChooseConfig',
+    'Team.apps.TeamConfig',
+    'work.apps.WorkConfig',
+    'news.apps.NewsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -1,7 +1,6 @@
 from django.db import models
 from django.db.models.deletion import CASCADE
 from django.db.models.fields.related import ForeignKey
-from font_icons.models import IconForeignKeyField
 
 
 # ---------------------------------------      About     ----------------------------------
@@ -31,7 +30,6 @@ class About(models.Model):
 
 
 class Choose(models.Model):
-    icon = IconForeignKeyField(blank=True, null=True)
     title = models.CharField(blank=True, null=True, max_length=150)
     description = models.CharField(blank=True, null=True, max_length=127)
 
@@ -94,7 +92,6 @@ class Blog(models.Model):
 
 class Profession(models.Model):
     name = models.CharField(blank=True, null=True, max_length=150)
-    icon = IconForeignKeyField(blank=True,null=True)
 
     def __str__(self):
         return self.name

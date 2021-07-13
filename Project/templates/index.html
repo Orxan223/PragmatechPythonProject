@@ -1,5 +1,6 @@
 {% extends "partials/_base.html" %}
-{% load static %}
+{% load static custom_filter %}
+{% load static custom_tags %}
 {% block content %}
 
 <!--Page Title-->
@@ -30,9 +31,11 @@
                     <div class="image-box">
                         {% for x in about %}
                         <figure class="image image-1 wow slideInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                            <img src="{{x.image.url}}" alt=""></figure>
+                            <img src="{{x.image.url}}" alt="">
+                        </figure>
                         <figure class="image image-2 wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <a href="" class="lightbox-image"><img src="" alt=""></a></figure>
+                            <a href="" class="lightbox-image"><img src="" alt=""></a>
+                        </figure>
                         {% endfor %}
                     </div>
                 </div>
@@ -48,8 +51,9 @@
 
                         </div>
                         <div class="text">
-                            <p>{{x.text}}</p>
-                            <!-- <p>{{x.text}}</p> -->
+                            <p>{{x.text |  upper }}</p>
+                            
+                     
                         </div>
                         {% endfor %}
 
@@ -127,11 +131,11 @@
                                 assets/images/icons/decor-1.png" %}');"></div>
                         </div>
                         <div class="text">
-                            <p>{{x.text}}</p>
+                            <p>{{x.text}}{% any_function %}</p>
                         </div>
                         <div class="inner-box">
                             <div class="progress-box">
-                                <h5>{{x.name}}</h5>
+                                <h5>{{x.name}} </h5>
                                 <div class="icon-box"><i class="flaticon-chat"></i></div>
                                 <div class="bar">
                                     <div class="bar-inner count-bar" data-percent="{{x.eded}}%">

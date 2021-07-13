@@ -1,4 +1,4 @@
-# from django import template
+# 1) from django import template
 # register = template.Library()
     
 # from ..models import Skill
@@ -10,7 +10,7 @@
 # 2si eyni vaxda islemediyine gore commente aldim. Bunu isletmek isdedikde mes:<p>{{x.text}}{% any_function  %}</p> 
 # yazmagimiz kifayetdir.
 
-
+# 2)
 from django import template
 register = template.Library()
 

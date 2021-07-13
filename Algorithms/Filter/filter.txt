@@ -1,0 +1,42 @@
+----------------------------------------------------Task----------------------------------------------------------
+Aşağıdakı alqoritmləri reponuzdaki Algorithms folderinə ayrı ayrı fayllar şəklində yerləşdirin.
+Proyektiniz üzərind ən azı 7 dənən template filter işlədin:
+
+<h2>{{x.title|capfirst}}</h2>
+  - Ilk herik boyuk ile yazilir
+
+
+<h2>{{x.title | slugify }}</h2>
+  - Blog 1 slug seklinde blog-1 olur
+  - Slug sekilinde gosderir
+
+
+<h2>{{x.title|upper}}</h2>
+  - Butun herfler boyuk ile yazilir
+
+
+<h2>{{x.title|length }}</h2>
+Meselen(Blog 1 = 6)
+  - Cumlenin uzunlugunu gosderir
+
+
+<h2>{{x.title|lower}}</h2>
+  - Butun herfler kicik ile yazilir
+
+
+<h2>{{x.title|date:"D d M Y"}}</h2>
+  - Vaxdlarimizi bu sekilde qeyd ede bilerik
+
+
+ <h2>{{x.title | make_list }}</h2>
+   - ['B', 'l', 'o', 'g', ' ', '1']
+   - Sozleri bu sekilde list halina salir
+
+
+ <h2>{{x.title | random }}</h2>
+   - Blog 1
+   - Random birini secir ve gosderir
+
+
+<h2>{{x.title | truncatechars:4  }}</h2>
+  - Blog 1 = Blo...

@@ -54,8 +54,8 @@ Django queries.(Part 1)
 
 
 ### Week04 Day01
-About views - yazıldı
-Choose views - yazıldı
+- About views - yazıldı
+- Choose views - yazıldı
 
 ### Week04 Day02
 - Blog views - yazıldı

@@ -77,4 +77,4 @@ Tasklar yazıldı - Algorithms , SEARCH əlavə edildi
 ### Week05 Day01
 Docker - quraşdırıldı
 Custom filter yazıldı(upper,low)
-Custom tag yazıldı(count)
+Custom tag yazıldı(count,time)

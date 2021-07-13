@@ -126,12 +126,12 @@
 
                         <div class="sec-title text-left">
                             <p>Skills & Facts</p>
-                            <h2>{{x.title}}</h2>
+                            <h2>{{x.title }}</h2>
                             <div class="decor" style="background-image: url('{% static "
                                 assets/images/icons/decor-1.png" %}');"></div>
                         </div>
                         <div class="text">
-                            <p>{{x.text}}{% any_function %}</p>
+                            <p>{{x.text}}</p>  
                         </div>
                         <div class="inner-box">
                             <div class="progress-box">
@@ -191,7 +191,9 @@
                         </figure>
                         <div class="lower-content">
                             <div class="file-box"><i class="far fa-folder-open"></i>
-                                <p>{{x.profession}}</p>
+
+                                <p>{{x.profession}} / </p>
+                                {% current_time "%d/%m/%Y %H:%M:%S %p" %}
                             </div>
                             <div class="title-box">
                                 <div class="post-date">

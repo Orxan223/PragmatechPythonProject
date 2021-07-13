@@ -58,11 +58,11 @@ About views - yazıldı
 Choose views - yazıldı
 
 ### Week04 Day02
-Blog views - yazıldı
-Skill views - yazıldı
-News views - yazıldı
-Team views - yazıldı
-Work views - yazıldı
+- Blog views - yazıldı
+- Skill views - yazıldı
+- News views - yazıldı
+- Team views - yazıldı
+- Work views - yazıldı
 
 ### Week04 Day03
 Contact form - yazıldı
@@ -75,6 +75,6 @@ Tasklar yazıldı - Algorithms , SEARCH əlavə edildi
 
 
 ### Week05 Day01
-Docker - quraşdırıldı
-Custom filter yazıldı(upper,low)
-Custom tag yazıldı(count,time)
+- Docker - quraşdırıldı
+- Custom filter yazıldı(upper,low)
+- Custom tag yazıldı(count,time)

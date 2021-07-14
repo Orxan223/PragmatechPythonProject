@@ -380,3 +380,41 @@ Csrf_token - biz tehlukesizlik vasitesile istifade edirik formlar-da
 Template {{filter}} nədir?
 Bize bezi funksionaliqlar vermkede komek olur. Bu kodlar vasitesile isdediymiz hiseleri filterliyerek en tez sekilde 
 isdediyimiz neticeleri aliriq. Numunelerde bunun nece usdunluk verdiyine nezer yetirek (Algorithms) 
+
+
+-------------------------------------------------------Docker---------------------------------------------
+Docker nedir ?
+- Butun emeliyyat sistemlerini uygunlasdirir.
+:Meselen men neyise linuxda yaziram, sabah teamde bunu kimese versek ,hansiki windows isledir ,proyektimizi ona enivorement ile yox,docker file ile gonderecik. 
+ve proyekt run olunanda o ounun emeliyyat sistemi ile islemiyecek dockerin icinden calisacaq.
+-Virtual masinlardan daha suretli olur, 
+-Izolyasiya olunmus yerdir ,hansiki orda muxtelif emeliyyat sistemlerine yazdigimiz kodlarin adaptasiya olumasi
+ucun istifade olunur.(Emrlerin tercume olunmasi kimi)
+
+
+Dockerhub nedir ?
+- orda imageler olur, framework kimi girib yukleyirik
+Dockerden istifade edib emeliyat sistemimize windows yukleye bilerik(tam windows deyil),
+onu hardan yukluyuruk dockerhubdan yukleriyirik .
+
+
+Volume nedir ? 
+- Docker yandirib sondurende , bizim melumatlar silinir(databaseden silinir) ve bizim 
+value imkan verir ki, men gelib database sekil eleva eledim data elave eledim,
+men komputeri sondurende dockerimde silinecek o sonende onun icindeki her sey silinir.Amma men o datalari saxlamaliyam
+ona gore de value kodundan istifade edirik 
+
+
+FROM python:3.9 - Dockere python getiririk
+
+WORKDIR /code - bu folderi axdarir yoxdusa bele bir file acir
+
+COPY . .  - kodlarimizi dockerin icerisine gondermeliyik
+
+RUN pip install -r req.txt - hansii library istifade edib bilmediymize gore , onu req.txt(requirements.txt ) icinde gotururuk
+
+ENV FLASK_APP=main.py = export  FLASK_APP=main.py 
+
+VALUE = [ "./media","media_folder" ] - bura tutaqki sekil atiriq ve bunu copylarayiriq ,2cide file adidir
+
+CMD [ "flask", "run" ]  - flusk run

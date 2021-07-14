@@ -78,3 +78,6 @@
 - Docker - quraşdırıldı
 - Custom filter yazıldı(upper,low)
 - Custom tag yazıldı(count,time)
+
+### Week05 Day02
+- Dockerfile quraşdırıldı proyektdən kənarda

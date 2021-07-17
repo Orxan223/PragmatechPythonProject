@@ -1,6 +1,6 @@
 ----------------------------------------------------Task----------------------------------------------------------
-Aşağıdakı alqoritmləri reponuzdaki Algorithms folderinə ayrı ayrı fayllar şəklində yerləşdirin.
-Proyektiniz üzərind ən azı 7 dənən template filter işlədin:
+Aşağıdakı alqoritmləri reponuzdakı Algorithms folderinə ayrı ayrı fayllar şəklində yerləşdirin.
+Proyektiniz üzərində ən azı 7 dənən template filter işlədin:
 
 <h2>{{x.title|capfirst}}</h2>
   - Ilk herik boyuk ile yazilir

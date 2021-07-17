@@ -81,3 +81,11 @@
 
 ### Week05 Day02
 - Dockerfile quraşdırıldı proyektdən kənarda
+
+
+### Week05 Day03
+- Docker Compose üzerindən proyekti quraşdırıldı
+
+
+### Week05 Day04
+- Database olaraq PostgreSQL istifadə edildi

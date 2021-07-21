@@ -388,8 +388,7 @@ Docker nedir ?
 :Meselen men neyise linuxda yaziram, sabah teamde bunu kimese versek ,hansiki windows isledir ,proyektimizi ona enivorement ile yox,docker file ile gonderecik. 
 ve proyekt run olunanda o ounun emeliyyat sistemi ile islemiyecek dockerin icinden calisacaq.
 -Virtual masinlardan daha suretli olur, 
--Izolyasiya olunmus yerdir ,hansiki orda muxtelif emeliyyat sistemlerine yazdigimiz kodlarin adaptasiya olumasi
-ucun istifade olunur.(Emrlerin tercume olunmasi kimi)
+-Izolyasiya olunmus yerdir ,hansiki orda muxtelif emeliyyat sistemlerine yazdigimiz kodlarin adaptasiya olumasi ucun istifade olunur.(Emrlerin tercume olunmasi kimi)
 
 
 Dockerhub nedir ?
@@ -418,3 +417,13 @@ ENV FLASK_APP=main.py = export  FLASK_APP=main.py
 VALUE = [ "./media","media_folder" ] - bura tutaqki sekil atiriq ve bunu copylarayiriq ,2cide file adidir
 
 CMD [ "flask", "run" ]  - flusk run
+
+
+
+-------------------------------------------------------Cookies---------------------------------------------
+nedir?
+-Fronend ve Backend-in goruse bileceyi yer  (elaqe qurmaq falan bundan istifade olunur).
+Bir kart fikirles ,o kart vasitesile cofe alirsan gezirsen falan ,o kart senin vizan kimidir.Session id-de mehz
+ele birseydir.Frontend sizin kodunuzu yox hemin session id olan kodu verir ve backend de gorurki heqiqeten bu adamin 
+icazesi var.Yeni session id icazeni temin eden koddur.
+

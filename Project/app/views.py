@@ -1,10 +1,13 @@
 from django.http import request
 from django.shortcuts import render,redirect
 from .models import About, Choose,Skill,Blog,Contact
-# Create your views here.
 from django.forms import forms
 from .forms import  ContactForm
 from django.contrib import messages
+from django.template.loader import render_to_string
+from django.http import HttpResponse
+
+
 
 
 def index(request):
@@ -81,3 +84,12 @@ def contact(request):
 
 
 
+def like_recipe(request):
+    if request.method == 'POST' :
+        liked_recipes = request.COOKIES.get("liked_recipes" , "")
+        recipe_id = request.POST.get('recipe_id')
+
+    html = render_to_string('successfuly_liked.html')
+    response = HttpResponse(html)
+    response.set_cookie('liked_recipes' , f'{liked_recipes}{recipe_id},' )
+    return response

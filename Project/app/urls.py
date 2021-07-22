@@ -18,4 +18,6 @@ urlpatterns = [
     path('team/', team, name='team'),
     path('choose/', choose, name='choose'),
     path('contact/', contact, name='contact'),
+    path('like/', like_recipe, name='like'),
+
 ]

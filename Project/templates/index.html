@@ -51,9 +51,9 @@
 
                         </div>
                         <div class="text">
-                            <p>{{x.text |  upper }}</p>
-                            
-                     
+                            <p>{{x.text | upper }}</p>
+
+
                         </div>
                         {% endfor %}
 
@@ -131,7 +131,7 @@
                                 assets/images/icons/decor-1.png" %}');"></div>
                         </div>
                         <div class="text">
-                            <p>{{x.text}}</p>  
+                            <p>{{x.text}}</p>
                         </div>
                         <div class="inner-box">
                             <div class="progress-box">
@@ -193,7 +193,6 @@
                             <div class="file-box"><i class="far fa-folder-open"></i>
 
                                 <p>{{x.profession}} / </p>
-                                {% current_time "%d/%m/%Y %H:%M:%S %p" %}
                             </div>
                             <div class="title-box">
                                 <div class="post-date">
@@ -202,8 +201,14 @@
                                 <h4><a href="blog-details.html">{{x.title}}</a></h4>
                             </div>
                             <div class="link"><a href="{% url 'blog' %}" class="btn-style-four">Read
-                                    More<span>+</span></a></div>
+                                    More<span>+</span></a>
+                            </div>
                         </div>
+                        <form action="{% url 'like' %}" method="POST">
+                            {% csrf_token %}
+                            <input type = "hidden" name = "recipe_id" value = "{{recipe.id}}">
+                            <input type = "submit" class="btn btn-primary" value = "like">
+                        </form>
                     </div>
                 </div>
                 {% endfor %}

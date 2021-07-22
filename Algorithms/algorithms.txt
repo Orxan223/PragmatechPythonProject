@@ -794,6 +794,7 @@ else:
 Aşağıdakı alqoritmləri reponuzdaki Algorithms folderinə ayrı ayrı fayllar şəklində yerləşdirin.
 Proyektiniz üzərind ən azı 7 dənən template filter işlədin:
 
+{% comment %}
 <h2>{{x.title|capfirst}}</h2>
   - Ilk herik boyuk ile yazilir
 
@@ -825,10 +826,10 @@ Meselen(Blog 1 = 6)
    - Sozleri bu sekilde list halina salir
 
 
- <h2>{{x.title | random }}</h2>
+ <h2> {{x.title | random }} </h2>
    - Blog 1
    - Random birini secir ve gosderir
 
 
-<h2>{{x.title | truncatechars:4  }}</h2>
-  - Blog 1 = Blo...
+<h2> {{x.title | truncatechars:4  }} </h2>
+  - Blog 1 = Blo... {% endcomment %}

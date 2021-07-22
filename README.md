@@ -89,3 +89,8 @@
 
 ### Week05 Day04
 - Database olaraq PostgreSQL istifadə edildi
+
+
+
+### Week06 Day01
+- Like edərən id-si cookie yazıldı

@@ -93,4 +93,5 @@
 
 
 ### Week06 Day01
-- Like edərən id-si cookie yazıldı
+- Like edərkən id-si cookie yazıldı
+

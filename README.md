@@ -95,3 +95,5 @@
 ### Week06 Day01
 - Like edərkən id-si cookie yazıldı
 
+### Week06 Day0
+- Login, Register yazıldı

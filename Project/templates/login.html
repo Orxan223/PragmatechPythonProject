@@ -1,0 +1,80 @@
+{% extends 'partials/_base.html' %}
+{% load static %}
+
+{% block content %}
+<!--Page Title-->
+<section class="page-title text-center style-two">
+    <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-62.png);"></div>
+    <div class="auto-container">
+        <div class="content-box">
+            <ul class="bread-crumb clearfix">
+                <li><a href="{% url 'index' %}">
+                        <h1>Login</h1>
+                    </a></li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End Page Title-->
+<section class="contact-section">
+
+
+    <div class="auto-container">
+        <h1>Login</h1>
+        <div class="row clearfix">
+
+            <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+                <div id="content_block_09">
+                    <div class="content-box">
+                        <form method="POST" action="{% url 'index' %}" id="contact-form" class="default-form">
+                            {% csrf_token %}
+                            {% if messages %}
+                            {% for message in messages %}
+                            <div class="alert alert-{{message.tags}}">
+
+                                {{message}}
+                            </div>
+                            {% endfor %}
+
+                            {% endif %}
+                            {% for field in form %}
+
+                            <div class="form-group">
+                                <!-- {{form.full_name}} -->
+                                {{field}}
+
+                            </div>
+                            {% endfor %}
+
+                            <!-- <div class="form-group">
+                                    {{form.email}}
+
+                                </div>
+                                <div class="form-group">
+                                    {{form.subject}}
+
+                                </div>
+                                <div class="form-group">
+                                    {{form.message}} -->
+
+                    </div>
+                    <div class="form-group">
+                        <button class="theme-btn style-nine" type="submit" name="submit-form">Login</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+            <div class="image-box wow slideInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+                <figure class="image js-tilt"><img src="assets/images/resource/illastration-6.png" alt=""></figure>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</section>
+<!-- contact-section end -->
+{% endblock %}

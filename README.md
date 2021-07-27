@@ -95,5 +95,8 @@
 ### Week06 Day01
 - Like edərkən id-si cookie yazıldı
 
-### Week06 Day02
+### Week06 Day04
 - Login, Register yazıldı
+
+### Week07 Day01
+- News və News-detail,class base views ilə yazıldı

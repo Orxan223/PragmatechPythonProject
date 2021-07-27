@@ -1,13 +1,15 @@
 from django.shortcuts import render
 from .models import *
-# Create your views here.
-def news(request):
-    news = News.objects.all()
-    context = {
-        'news' : news
-    }
-    return render(request,'news.html',context)
+from django.views.generic.list import ListView
+from django.views.generic.detail import DetailView
 
-def news_detail(request, slug):
-    news = News.objects.get(slug=slug)
-    return render(request, "news-detail.html" , {'news' : news})
+
+class NewsListView(ListView):
+    model = News
+    template_name = 'news.html'
+    context_object_name = 'news'
+
+class NewsDetailView(DetailView):
+    model = News
+    template_name = 'news-detail.html'
+    context_object_name = 'news'

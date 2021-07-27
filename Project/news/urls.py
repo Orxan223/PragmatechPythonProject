@@ -1,7 +1,9 @@
 from django.urls import path, include
-from .views import news,news_detail
+from .views import NewsListView , NewsDetailView
+
+
 
 urlpatterns = [
-    path('',news,name='news'),
-    path('<slug:slug>',news_detail,name='news_detail'),
+    path('',NewsListView.as_view(),name='news'),
+    path('<slug:slug>',NewsDetailView.as_view(),name='news_detail'),
 ]

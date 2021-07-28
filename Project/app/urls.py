@@ -13,11 +13,12 @@ urlpatterns = [
     path('', index, name='index'),
     path('blog/', blog, name='blog'),
     path('skill/', skill, name='skill'),
-    path('counter/', counter, name='counter'),
     path('work/', work, name='work'),
     path('team/', team, name='team'),
     path('choose/', choose, name='choose'),
     path('contact/', contact, name='contact'),
     path('like/', like_recipe, name='like'),
+    path('counter/', CounterView.as_view(), name="counter"),
+
 
 ]

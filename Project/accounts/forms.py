@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-
+from . models import Register
 
 class LoginForm(forms.Form):
     username = forms.CharField(widget=forms.TextInput(attrs={
@@ -71,7 +71,7 @@ class ContactForm(forms.ModelForm):
         'placeholder': 'Your Phone'
     }))
     message = forms.CharField(widget=forms.Textarea(attrs={
-        'class': 'form-control',
+        'class': 'forzm-control',
         'placeholder': 'Your Message'
     }))
 

@@ -6,7 +6,7 @@ from .forms import  ContactForm
 from django.contrib import messages
 from django.template.loader import render_to_string
 from django.http import HttpResponse
-
+from django.views.generic import TemplateView
 
 
 
@@ -45,7 +45,17 @@ def blog(request):
 
 
 
+from django.shortcuts import render
+from django.views.generic import TemplateView
 
+
+class CounterView(TemplateView):
+    template_name = 'counter.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['total_work'] = Work.objects.count()
+        return context
 
 
 def counter(request):
